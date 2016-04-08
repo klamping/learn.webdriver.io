@@ -485,6 +485,12 @@ a:focus {
     max-width: 100%;
 }
 
+.quick-features .icon {
+  width: 80px;
+  height: 3.5em;
+  fill: currentColor;
+}
+
 
 /*========== 4. FEATURES ==============*/
 
@@ -502,6 +508,12 @@ a:focus {
 
 .thumbnail .caption p {
     color: #94a3a8;
+}
+
+.lesson {
+  font-size: .85em;
+  color: #5ca2e0;
+  margin-bottom: 0;
 }
 
 
@@ -774,6 +786,10 @@ blockquote {
     .breath {
         margin: 30px auto;
     }
+    .scrollto,
+    .supporing-content img {
+      display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -790,6 +806,20 @@ blockquote {
     }
     .masthead {
         padding: 40px 15px;
+    }
+    .thumbnail{
+      margin: 0;
+      padding: 0;
+    }
+    .lesson {
+      line-height: 1.2;
+    }
+
+    .clientblock img {
+      width: 50%;
+    }
+    .testimonials .has-padding-top {
+      padding-top: 0;
     }
 }
 
@@ -815,7 +845,7 @@ blockquote {
     margin: 10px;
 }
 
-s
+
 /*=== Navigation ===*/
 
 .navbar-default {
@@ -869,14 +899,6 @@ s
 
 .color-white {
     color: #FFF!important;
-}
-
-
-.icon {
-  display: inline-block;
-  width: 5em;
-  height: 5em;
-  fill: currentColor;
 }
 
 .clear-left {

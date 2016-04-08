@@ -93,19 +93,20 @@ h6 {
 }
 
 a {
-    color: #5173bd;
+    color: #274F9D;
+    text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-    color: #5173bd;
-    text-decoration: none;
+    color: #17249D;
 }
 
 .btn,
 .btn-lg,
 .input-lg {
     border-radius: 3px;
+    text-decoration: none;
 }
 
 .form-control {
@@ -124,7 +125,7 @@ a:focus {
 }
 
 .form-control:focus {
-    border-color: #AFBDC8;
+    border-color: #DDD;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -191,7 +192,10 @@ a:focus {
     color: #FFF;
     text-align: center;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
-    background-color: #323e4f;
+    background: #202020 url("../images/dark_wall.png") repeat;
+    /*background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/hexabump_@2X.png") repeat;
+    background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/pw_maze_black_@2X.png") repeat;*/
+    /*background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/use_your_illusion.png") repeat;*/
 }
 
 .masthead .main-title {
@@ -202,19 +206,6 @@ a:focus {
     color: #adb8c7;
     margin-top: 0;
 }
-
-.bg-family {
-    background-color: #323e4f;
-    background-image: url(../images/header_bg_gradient.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 
 /*animation ends*/
 
@@ -249,7 +240,7 @@ a:focus {
 }
 
 .btn-primary {
-    background-color: #2db6d8;
+    background-color: #ea5906;
     background-image: none;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
@@ -257,8 +248,9 @@ a:focus {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background-color: #209ab8!important;
+    background-color: #ea5906!important;
     color: #FFF!important;
+    border-color: #F68C03;
 }
 
 .btn-warning {
@@ -290,15 +282,15 @@ a:focus {
 }
 
 .form-control::-moz-placeholder {
-    color: #848E93;
+    color: #888;
 }
 
 .form-control:-ms-input-placeholder {
-    color: #848E93;
+    color: #888;
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #848E93;
+    color: #888;
 }
 
 
@@ -392,7 +384,7 @@ a:focus {
 /*Header Contact Form*/
 
 .contact-form {
-    background: #4a5565;
+    background: rgba(59, 59, 59, .6);
     border-radius: 3px;
     padding: 15px;
     text-align: left;
@@ -406,7 +398,7 @@ a:focus {
 }
 
 .dark-input {
-    background: #353f4d;
+    background: #444;
     color: #FFF;
 }
 
@@ -487,8 +479,9 @@ a:focus {
 
 .quick-features .icon {
   width: 80px;
-  height: 3.5em;
+  height: 3em;
   fill: currentColor;
+  opacity: .7;
 }
 
 
@@ -512,7 +505,7 @@ a:focus {
 
 .lesson {
   font-size: .85em;
-  color: #5ca2e0;
+  color: #D33B05;
   margin-bottom: 0;
 }
 
@@ -740,7 +733,7 @@ blockquote {
     color: #FFF;
     text-align: center;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
-    background-color: #323e4f;
+    background: #202020 url("../images/dark_wall.png") repeat;
 }
 
 .footercta .section-title {
@@ -846,56 +839,6 @@ blockquote {
 }
 
 
-/*=== Navigation ===*/
-
-.navbar-default {
-    background-color: #FFF;
-    border-color: #e0e0e0;
-}
-
-.navbar-default .navbar-brand,
-.navbar-default .navbar-brand:hover {
-    color: #FFF;
-    font-weight: bold;
-}
-
-.navbar-default .navbar-nav > li > a {
-    color: #333;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #333;
-    background-color: rgba(255, 255, 255, 0.22);
-}
-
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: rgba(0, 0, 0, 0.5);
-    background-color: transparent;
-}
-
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-    color: #333;
-    background-color: rgba(255, 255, 255, 0.21);
-}
-
-.navbar-brand {
-    padding: 8px 15px;
-}
-
-
-/*Layout 4 Full Header BG*/
-
-.masthead.header-bg {
-    background: url(../images/travel-bg.jpg) top center no-repeat;
-    background-size: cover;
-}
 
 .color-white {
     color: #FFF!important;

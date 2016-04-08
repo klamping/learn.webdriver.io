@@ -93,13 +93,13 @@ h6 {
 }
 
 a {
-    color: #274F9D;
+    color: #445;
     text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-    color: #17249D;
+    color: #5a5a6a;
 }
 
 .btn,

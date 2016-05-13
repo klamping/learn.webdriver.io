@@ -850,3 +850,25 @@ box-shadow: 0px 0px 18px -5px rgba(46,46,46,0.68);
 .clear-left {
   clear: left;
 }
+
+.cta-btn {
+  width: 100%;
+  text-align: center;
+  margin: .5em 0;
+}
+
+.cta-btn del {
+  color: #FDDCCA;
+}
+
+.btn-outline {
+  border: 1px solid #ddd;
+  color: #ddd;
+  width: 100%;
+  margin-top: 2.5em;
+}
+.btn-outline:hover,
+.btn-outline:focus {
+  color: #fff;
+  background: #444;
+}

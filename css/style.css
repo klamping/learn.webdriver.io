@@ -170,7 +170,7 @@ a:focus {
 }
 
 .has-padding-bottom {
-    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 
@@ -192,10 +192,13 @@ a:focus {
     color: #FFF;
     text-align: center;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
-    background: #202020 url("../images/dark_wall.png") repeat;
-    /*background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/hexabump_@2X.png") repeat;
-    background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/pw_maze_black_@2X.png") repeat;*/
-    /*background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/use_your_illusion.png") repeat;*/
+    background: #202020 url("../images/binding_dark.png") repeat;
+    /*background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/hexabump_@2X.png") repeat;*/
+    /*background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/pw_maze_black_@2X.png") repeat;*/
+    /*background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/use_your_illusion_@2X.png") repeat;*/
+    /*background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/noisy_net_@2X.png") repeat;*/
+    /*background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png") repeat;*/
+    /*background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/binding_dark.png");*/
 }
 
 .masthead .main-title {
@@ -384,7 +387,7 @@ a:focus {
 /*Header Contact Form*/
 
 .contact-form {
-    background: rgba(59, 59, 59, .6);
+    background: rgba(139, 139, 139, .35);
     border-radius: 3px;
     padding: 15px;
     text-align: left;
@@ -395,6 +398,10 @@ a:focus {
     margin-bottom: 20px;
     line-height: 1.5;
     color: #FFF;
+}
+
+.contact-form .btn-divider {
+  padding: 0 1em;
 }
 
 .dark-input {
@@ -423,29 +430,30 @@ a:focus {
 .features-lead {
     margin-bottom: 30px;
     color: #323e4f;
+    font-size: 30px;
 }
 
-.featues-single {
+.features-single {
     margin-bottom: 30px;
 }
 
-.featues-single img {
+.features-single img {
     margin-right: 25px;
 }
 
-.featues-single h5 {
+.features-single h5 {
     margin-bottom: 10px;
     margin-left: 85px;
     color: #323e4f;
 }
 
-.featues-single p {
+.features-single p {
     color: #adb8c7;
     margin-left: 85px;
     margin-bottom: 0;
 }
 
-.masthead .featues-single h5,
+.masthead .features-single h5,
 .masthead .features-lead {
     color: #fff;
 }
@@ -503,9 +511,13 @@ a:focus {
     color: #94a3a8;
 }
 
+.lessons-title {
+  color: #D33B05;
+}
+
 .lesson {
   font-size: .85em;
-  color: #D33B05;
+  color: #bbb;
   margin-bottom: 0;
 }
 
@@ -736,7 +748,7 @@ box-shadow: 0px 0px 18px -5px rgba(46,46,46,0.68);
     color: #FFF;
     text-align: center;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
-    background: #202020 url("../images/dark_wall.png") repeat;
+    background: #202020 url("../images/binding_dark.png") repeat;
 }
 
 .footercta .section-title {
@@ -863,12 +875,57 @@ box-shadow: 0px 0px 18px -5px rgba(46,46,46,0.68);
 
 .btn-outline {
   border: 1px solid #ddd;
-  color: #ddd;
-  width: 100%;
+  color: #333;
   margin-top: 2.5em;
 }
 .btn-outline:hover,
 .btn-outline:focus {
   color: #fff;
   background: #444;
+}
+
+.btn-outline.intro {
+  margin: 2.5em auto 0;
+  width: 50%;
+  clear: both;
+  display: block;
+}
+
+
+
+
+/* Clock */
+.countdown-title {
+  text-align: center;
+  color: #fff;
+}
+#clockdiv{
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  font-size: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#clockdiv > div{
+  width: 24%;
+  padding: 5px;
+  border-radius: 3px;
+  background: #333;
+  display: inline-block;
+}
+
+#clockdiv div > span{
+  font-family: "Consolas", Monaco, monospace;
+  padding: 5px 8px;
+  border-radius: 3px;
+  background: #aaa;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.smalltext{
+  margin-top: 5px;
+  font-size: 16px;
 }

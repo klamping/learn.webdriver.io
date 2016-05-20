@@ -51,14 +51,7 @@
 
             <a href="http://the-lamp-light.thinkific.com/users/sign_in" class="sign-in">Already a student? Sign In</a>
 
-            <!-- Startup Logo -->
-            <!-- <div class="logo">
-                <a href="#"><img src="images/all-in-one-logo.png" alt="All in One Logo"></a>
-            </div> -->
-            <!-- Hero Title -->
             <h1 class="main-title">Manually testing everything after every change is a waste of time and effort.</h1>
-            <!-- Sub Title -->
-            <h4 class="sub-title"></h4>
             <!-- Quick Features and form -->
             <div class="row has-padding-top">
                 <div class="col-sm-12 col-md-8">
@@ -89,7 +82,7 @@
 
                         <p>Take 75% off the full price with early-bird pricing. Don't wait, the price goes up after May 31st.</p>
 
-                        <a href="#pricing-table" class="btn btn-primary btn-lg cta-btn">Pre-Enroll Me<span class="btn-divider">|</span><del>$197</del> $47</a>
+                        <a href="#pricing-anchor" class="btn btn-primary btn-lg cta-btn go_to_div">Pre-Enroll Me<span class="btn-divider">|</span><del>$197</del> $47</a>
 
                         <h3 class="countdown-title">Hurry, The Price Doubles In:</h3>
                         <div id="clockdiv">
@@ -341,7 +334,8 @@
             </div>
         </div> -->
 
-        <div class="pricing-table" id="pricing-table">
+        <a id="pricing-anchor" name="pricing-anchor"></a>
+        <div class="pricing-table">
           <h2 class="pricing-title">What you get:</h2>
           <ul class="course-features">
             <li class="discount-feature">
@@ -363,6 +357,9 @@
         </div>
 
         <p class="disclaimer">* Course content still in development. Early Access gives you instant access to the lessons as soon as they're ready.</p>
+
+
+        <a href="http://eepurl.com/bXm_qf" class="fallback">Not quite ready to buy? Subscribe to notifications when the course is updated.</a>
 
         <!-- Video Section -->
 
@@ -481,21 +478,6 @@
     <!-- // Container Ends -->
 
 
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
-================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-
-    <!--Responsive Video-->
-    <script src="js/fitvids.js"></script>
-    <script>
-    $(document).ready(function() {
-        // Target your .container, .wrapper, .post, etc.
-        $("#videoBlock").fitVids();
-    });
-    </script>
-
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 
       <symbol id="icon-bug" viewBox="0 0 32 32">
@@ -512,6 +494,21 @@
       </symbol>
     </svg>
 
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+
+    <!--Responsive Video-->
+    <script src="js/fitvids.js"></script>
+    <script>
+    $(document).ready(function() {
+        // Target your .container, .wrapper, .post, etc.
+        $("#videoBlock").fitVids();
+    });
+    </script>
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -521,6 +518,21 @@
       ga('create', 'UA-10401592-3', 'auto');
       ga('send', 'pageview');
 
+    </script>
+
+    <script>
+      $(function() {
+
+          // Scroll to Explore
+
+          $('.scrollto, .go_to_div').bind('click', function(event) {
+              var $anchor = $(this);
+              $('html, body').stop().animate({
+                  scrollTop: $($anchor.attr('href')).offset().top
+              }, 1500);
+              event.preventDefault();
+          });
+      });
     </script>
 
 </body>

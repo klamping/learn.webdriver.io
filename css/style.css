@@ -953,3 +953,67 @@ box-shadow: 0px 0px 18px -5px rgba(46,46,46,0.68);
     display: none;
   }
 }
+.pricing-table,
+.disclaimer {
+  margin: 0 auto;
+  width: 30em;
+  max-width: 95%;
+}
+.disclaimer {
+  margin-top: 1em;
+}
+
+.pricing-table {
+  border: 1px solid rgba(33,33,33,.3);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.pricing-table .pricing-title {
+  margin: 0;
+  background: #333;
+  color: #fff;
+  padding: .5em;
+  border-bottom: 1px solid #aaa;
+}
+.pricing-table .course-features {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  font-size: 1.2em;
+}
+.pricing-table .course-features li {
+  border-bottom: 1px solid #ddd;
+  padding: .5em 1em;
+  color: #666;
+}
+
+.pricing-table .discount-feature {
+  text-align: center;
+  font-size: 28px;
+  background: #f4f4f4;
+  line-height: .8;
+}
+.pricing-table .price {
+  display: block;
+  padding: 15px 0;
+  font-size: 98px;
+  color: #000;
+  margin-right: 20px;
+}
+.pricing-table .dollar {
+  font-size: .6em;
+}
+.pricing-table .discount-price,
+.pricing-table .full-price {
+  display: inline-block;
+}
+.pricing-table .full-price {
+  font-size: 48px;
+  color: #bbb;
+}
+
+.pricing-table .cta a {
+  margin: .7em;
+  display: block;
+  width: auto;
+}

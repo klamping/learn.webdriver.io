@@ -78,76 +78,11 @@
                 <div class="col-sm-6 col-sm-offset-3 col-md-offset-0 col-md-4">
                     <div class="contact-form">
                         <!--<div class="point-arrow hidden-xs hidden-sm"><img src="images/arrow-form.png" align="arrow" /> </div>-->
-                        <h3 class="mini-title">Pre-enroll now and save $150</h3>
+                        <h3 class="mini-title">Pre-enroll now and save $100</h3>
 
-                        <p>Take 75% off the full price with early-bird pricing. Don't wait, the price goes up after May 31st.</p>
+                        <p>Take 50% off the full price with early-bird pricing.</p>
 
-                        <a href="#pricing-anchor" class="btn btn-primary btn-lg cta-btn go_to_div">Pre-Enroll Me<span class="btn-divider">|</span><del>$197</del> $47</a>
-
-                        <h3 class="countdown-title">Hurry, The Price Doubles In:</h3>
-                        <div id="clockdiv">
-                          <div>
-                            <span class="days"></span>
-                            <div class="smalltext">Days</div>
-                          </div>
-                          <div>
-                            <span class="hours"></span>
-                            <div class="smalltext">Hours</div>
-                          </div>
-                          <div>
-                            <span class="minutes"></span>
-                            <div class="smalltext">Minutes</div>
-                          </div>
-                          <div>
-                            <span class="seconds"></span>
-                            <div class="smalltext">Seconds</div>
-                          </div>
-                        </div>
-                        <script>
-
-                          function getTimeRemaining(endtime) {
-                            var t = Date.parse(endtime) - Date.parse(new Date());
-                            var seconds = Math.floor((t / 1000) % 60);
-                            var minutes = Math.floor((t / 1000 / 60) % 60);
-                            var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-                            var days = Math.floor(t / (1000 * 60 * 60 * 24));
-                            return {
-                              'total': t,
-                              'days': days,
-                              'hours': hours,
-                              'minutes': minutes,
-                              'seconds': seconds
-                            };
-                          }
-
-                          function initializeClock(id, endtime) {
-                            var clock = document.getElementById(id);
-                            var daysSpan = clock.querySelector('.days');
-                            var hoursSpan = clock.querySelector('.hours');
-                            var minutesSpan = clock.querySelector('.minutes');
-                            var secondsSpan = clock.querySelector('.seconds');
-
-                            function updateClock() {
-                              var t = getTimeRemaining(endtime);
-
-                              daysSpan.innerHTML = t.days;
-                              hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-                              minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-                              secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-                              if (t.total <= 0) {
-                                clearInterval(timeinterval);
-                              }
-                            }
-
-                            updateClock();
-                            var timeinterval = setInterval(updateClock, 1000);
-                          }
-
-                          var deadline = new Date('June 1, 2016 00:00:00 CDT');
-                          initializeClock('clockdiv', deadline);
-                        </script>
-
+                        <a href="#pricing-anchor" class="btn btn-primary btn-lg cta-btn go_to_div">Pre-Enroll Me<span class="btn-divider">|</span><del>$197</del> $97</a>
                     </div>
                 </div>
             </div>
@@ -340,7 +275,7 @@
           <ul class="course-features">
             <li class="discount-feature">
               <div class="price">
-                <p class="discount-price"><sup class="dollar">$</sup>47</p>
+                <p class="discount-price"><sup class="dollar">$</sup>97</p>
                 <p class="full-price"><sup class="dollar">$</sup><del>197</del></p>
               </div>
               <p>Early Access Price</p>

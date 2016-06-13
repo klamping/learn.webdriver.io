@@ -62,6 +62,12 @@ h1 {
     line-height: 1.5;
     margin: 25px 0;
 }
+.subtitle {
+  font-size: 42px;
+  text-align: center;
+  color: #ea5906;
+  margin: .5em 0;
+}
 
 h2 {
     font-size: 28px;
@@ -188,11 +194,11 @@ a:focus {
 
 .masthead {
     position: relative;
-    padding: 20px 15px;
+    padding: 20px 15px 3em;
     color: #FFF;
-    text-align: center;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
     background: #202020 url("../images/binding_dark.png") repeat;
+    font-size: 20px;
     /*background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/hexabump_@2X.png") repeat;*/
     /*background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/pw_maze_black_@2X.png") repeat;*/
     /*background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/use_your_illusion_@2X.png") repeat;*/
@@ -202,7 +208,8 @@ a:focus {
 }
 
 .masthead .main-title {
-    margin-bottom: 0;
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 
 @media (max-width: 991px) {
@@ -213,9 +220,8 @@ a:focus {
 
 }
 
-.masthead .sub-title {
+.masthead .intro a {
     color: #adb8c7;
-    margin-top: 0;
 }
 
 /*animation ends*/
@@ -288,7 +294,7 @@ a:focus {
     text-align: center;
 }
 
-.masthead .form-control {
+.form-control {
     border: 0;
 }
 
@@ -305,101 +311,15 @@ a:focus {
 }
 
 
-/* Boucing Arrow Animation */
-
-@keyframes arrowbounce {
-    from {
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        transform: translateY(0);
-    }
-    to {
-        -webkit-transform: translateY(-20px);
-        -moz-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-}
-
-@-moz-keyframes arrowbounce {
-    /* Firefox */
-    from {
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        transform: translateY(0);
-    }
-    to {
-        -webkit-transform: translateY(-20px);
-        -moz-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-}
-
-@-webkit-keyframes arrowbounce {
-    /* Safari and Chrome */
-    from {
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        transform: translateY(0);
-    }
-    to {
-        -webkit-transform: translateY(-20px);
-        -moz-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-}
-
-@-o-keyframes arrowbounce {
-    /* Opera */
-    from {
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        transform: translateY(0);
-    }
-    to {
-        -webkit-transform: translateY(-20px);
-        -moz-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-}
-
-.scrollto,
-.scrollto:hover {
-    margin: 30px;
-    display: block;
-    color: #FFF;
-    text-decoration: none;
-    width: 200px;
-    margin: 0 auto;
-}
-
-.scrollto small {
-    color: #adb8c7;
-}
-
-.scrollto--arrow {
-    padding: 20px;
-    padding-bottom: 0;
-}
-
-.scrollto--arrow img {
-    animation: arrowbounce 1s alternate infinite;
-    -moz-animation: arrowbounce 1s alternate infinite;
-    /* Firefox */
-    -webkit-animation: arrowbounce 1s alternate infinite;
-    /* Safari and Chrome */
-    -o-animation: arrowbounce 1s alternate infinite;
-    /* Opera */
-}
-
 
 /*Header Contact Form*/
 
 .contact-form {
-    background: rgba(139, 139, 139, .35);
     border-radius: 3px;
     padding: 15px;
     text-align: left;
     position: relative;
+    background: #202020 url("../images/binding_dark.png") repeat;
 }
 
 .contact-form .mini-title {
@@ -417,33 +337,18 @@ a:focus {
     color: #FFF;
 }
 
-.loading p {
-    margin: 10px 0 0 0;
-    text-align: center;
-}
-
-.point-arrow {
-    position: absolute;
-    left: -65px;
-    top: -30px;
-}
-
-
 /*Quick Features*/
 
-.quick-features {
-    text-align: left;
-}
 
 .features-lead {
     margin-top: 0;
     margin-bottom: 30px;
-    color: #323e4f;
     font-size: 30px;
 }
 
 .features-single {
     margin-bottom: 30px;
+    color: #666;
 }
 
 .features-single img {
@@ -453,20 +358,12 @@ a:focus {
 .features-single h5 {
     margin-bottom: 10px;
     margin-left: 85px;
-    color: #323e4f;
 }
 
 .features-single p {
-    color: #adb8c7;
     margin-left: 85px;
     margin-bottom: 0;
 }
-
-.masthead .features-single h5,
-.masthead .features-lead {
-    color: #fff;
-}
-
 
 /*========== 3. HERO IMAGE ==============*/
 
@@ -883,14 +780,15 @@ box-shadow: 0px 0px 18px -5px rgba(46,46,46,0.68);
 }
 
 .btn-outline {
-  border: 1px solid #ddd;
-  color: #333;
+  border: 1px solid #ea5906;
+  color: #eee;
   margin-top: 2.5em;
+  background: rgba(100,100,100,.1);
 }
 .btn-outline:hover,
 .btn-outline:focus {
   color: #fff;
-  background: #444;
+  background: rgba(255,255,255,.2);
 }
 
 .btn-outline.intro {
@@ -907,6 +805,12 @@ box-shadow: 0px 0px 18px -5px rgba(46,46,46,0.68);
   }
 }
 
+.intro-video {
+  display:none;
+  height: 315px;
+  text-align: center;
+  margin-top: 2em;
+}
 
 
 /* Clock */
@@ -951,6 +855,7 @@ box-shadow: 0px 0px 18px -5px rgba(46,46,46,0.68);
   top: 1em;
   color: #777;
   text-decoration: none;
+  font-size: 16px;
 }
 .sign-in:hover,
 .sign-in:focus {

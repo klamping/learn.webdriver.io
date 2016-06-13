@@ -62,11 +62,13 @@
               <div class="col-md-4 col-sm-12"> <img src="images/logo-gray.png" alt="WebdriverIO Robot" class="img-responsive center-block"> </div>
             </div>
 
-            <!-- // Supporting Content-->
-            <a href="#intro-video" onclick="$('#intro-video').show(); ga('send', 'event', 'Videos', 'play', 'Introduction');" class="btn btn-outline btn-lg intro">Watch the Introduction</a>
+            <div id="intro-video-container">
+              <!-- // Supporting Content-->
+              <a href="#intro-video" onclick="$('#intro-video').show(); $('html, body').stop().animate({scrollTop: $('#intro-video-container').offset().top}); ga('send', 'event', 'Videos', 'play', 'Introduction'); event.preventDefault()" class="btn btn-outline btn-lg intro">Watch the Introduction</a>
 
-            <div id="intro-video" class="intro-video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/xXB2601jc7A" frameborder="0" allowfullscreen></iframe>
+              <div class="intro-video" id="intro-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xXB2601jc7A" frameborder="0" allowfullscreen id="intro-vid-iframe"></iframe>
+              </div>
             </div>
 
         </div>

@@ -805,6 +805,10 @@ box-shadow: 0px 0px 18px -5px rgba(46,46,46,0.68);
   }
 }
 
+#intro-video-container {
+  padding-top: .75em;
+}
+
 .intro-video {
   display:none;
   height: 315px;

@@ -394,7 +394,7 @@ a:focus {
 .quick-features .icon {
   width: 80px;
   height: 3em;
-  fill: currentColor;
+  fill: #323232;
   opacity: .7;
 }
 

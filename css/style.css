@@ -413,18 +413,28 @@ a:focus {
     border: 0;
 }
 
-.thumbnail .caption p {
-    color: #94a3a8;
+.thumbnail .caption h3 {
+  font-size: 20px;
 }
 
-.lessons-title {
-  color: #ea5906;
+.thumbnail .caption p {
+  color: #94a3a8;
+  font-size: 16px;
+}
+
+.thumbnail:hover .caption p {
+  color: #666;
 }
 
 .lesson {
   font-size: .85em;
   color: #bbb;
   margin-bottom: 0;
+}
+
+
+.thumbnail:hover .lesson {
+  color: #000;
 }
 
 

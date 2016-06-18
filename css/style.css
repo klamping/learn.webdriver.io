@@ -432,6 +432,24 @@ a:focus {
   margin-bottom: 0;
 }
 
+.lesson .status {
+  font-weight: normal;
+  display: inline-block;
+  padding: 3px;
+  border: 1px solid #A7CDCC;
+  margin-left: 1em;
+  background: #F6F6F6;
+  float: right;
+  color: #A7CDCC;
+}
+
+.lesson .status.in-progress {
+  /*color: #F6E4AD;*/
+}
+.thumbnail:hover .lesson .status {
+  color: #004A55;
+}
+
 
 .thumbnail:hover .lesson {
   color: #000;

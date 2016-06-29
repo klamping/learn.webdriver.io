@@ -192,6 +192,19 @@ a:focus {
 
 /*========== 2. HEADER ==============*/
 
+.get-notified {
+  background: #ea5906;
+  color: #fff;
+  padding: 5px 1em;
+  font-size: 16px;
+  text-align: center;
+}
+.get-notified a {
+  color: #fff;
+  display: inline-block;
+  margin-left: .5em;
+}
+
 .masthead {
     position: relative;
     padding: 20px 15px 3em;

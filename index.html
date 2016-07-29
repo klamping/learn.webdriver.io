@@ -75,11 +75,21 @@
 
             <div id="intro-video-container">
               <!-- // Supporting Content-->
-              <a href="#intro-video" onclick="$('#intro-video').show(); $('html, body').stop().animate({scrollTop: $('#intro-video-container').offset().top}); ga('send', 'event', 'Videos', 'play', 'Introduction'); event.preventDefault()" class="btn btn-outline btn-lg intro">Watch the Course Introduction</a>
+              <a href="#intro-video" class="btn btn-outline btn-lg intro" id="video-cta">Watch the Course Introduction</a>
 
               <div class="intro-video" id="intro-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/xXB2601jc7A" frameborder="0" allowfullscreen id="intro-vid-iframe"></iframe>
+                <iframe width="560" height="315" frameborder="0" allowfullscreen id="intro-vid-iframe"></iframe>
                 <a href="#pricing-anchor" class="btn btn-primary btn-lg cta-btn go_to_div" onclick="ga('send', 'event', 'Button', 'click', 'Video CTA');">Sound good? Ready to enroll?</a>
+
+                <script>
+                  document.getElementById("video-cta").addEventListener("click", function () {
+                    document.getElementById("intro-vid-iframe").src = "https://www.youtube.com/embed/xXB2601jc7A?autoplay=1";
+                    $('html, body').stop().animate({scrollTop: $('#intro-video-container').offset().top});
+                    $('#intro-video').show();
+                    ga('send', 'event', 'Videos', 'play', 'Introduction');
+                    event.preventDefault()
+                  })
+                </script>
               </div>
 
             </div>

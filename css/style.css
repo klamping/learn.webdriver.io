@@ -220,17 +220,11 @@ a:focus {
     /*background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/binding_dark.png");*/
 }
 
-.masthead .main-title {
+
+.main-title {
   margin-top: 1em;
   margin-bottom: 0;
-}
-
-@media (max-width: 991px) {
-
-  .masthead .main-title {
-      text-align: left;
-  }
-
+  line-height: 1;
 }
 
 .masthead .intro a {
@@ -238,11 +232,6 @@ a:focus {
 }
 
 /*animation ends*/
-
-.logo {
-    padding: 15px 0;
-    text-align: center;
-}
 
 .btn-large {
     font-size: 18px;
@@ -294,6 +283,63 @@ a:focus {
 .btn-warning:active {
     -webkit-box-shadow: 0 3px 0 rgb(177, 116, 29);
     box-shadow: 0 3px 0 rgb(177, 116, 29);
+}
+
+
+
+.signup-block {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 7px;
+    margin-bottom: 25px;
+}
+
+.form-group.last {
+    margin-bottom: 0;
+}
+
+.multiple-btns .btn + .btn {
+    margin: 10px;
+}
+
+
+
+.color-white {
+    color: #FFF!important;
+}
+
+.clear-left {
+  clear: left;
+}
+
+.cta-btn {
+  width: 100%;
+  text-align: center;
+  margin: .5em 0;
+}
+
+.cta-btn del {
+  color: #FDDCCA;
+}
+
+.btn-outline {
+  border: 1px solid #ea5906;
+  color: #eee;
+  margin-top: 2.5em;
+  background: rgba(100,100,100,.1);
+}
+.btn-outline:hover,
+.btn-outline:focus {
+  color: #fff;
+  background: rgba(255,255,255,.2);
+}
+
+.btn-outline.intro {
+  margin: 1.5em auto 0;
+  width: 50%;
+  max-width: 28em;
+  clear: both;
+  display: block;
 }
 
 .subscribe {
@@ -414,98 +460,94 @@ a:focus {
 
 /*========== 4. FEATURES ==============*/
 
+.lessons-title {
+  margin-bottom: 15px;
+}
+
 .features {
-    margin: 25px 0;
+    margin: 0 0 25px;
     border: 1px solid #eee;
     overflow: hidden;
     border-radius: 5px;
-    padding-top: 10px;
+    padding: 0 25px;
 }
 
-.thumbnail {
-    border: 0;
+.module {
+  border-bottom: 1px solid #eee;
+  padding: 1.5em 0;
 }
 
-.thumbnail .caption h3 {
+.module .module-number {
   font-size: 20px;
-}
-
-.thumbnail .caption p {
-  color: #94a3a8;
-  font-size: 16px;
-}
-
-.thumbnail:hover .caption p {
-  color: #666;
-}
-
-.lesson {
-  font-size: .85em;
-  color: #bbb;
-  margin-bottom: 0;
-}
-
-.lesson .status {
-  font-weight: normal;
   display: inline-block;
-  padding: 3px;
-  border: 1px solid #A7CDCC;
-  margin-left: 1em;
-  background: #F6F6F6;
-  float: right;
-  color: #A7CDCC;
+  margin: 0;
+  margin-right: 10px;
 }
 
-.lesson .status.in-progress {
-  /*color: #F6E4AD;*/
-}
-.thumbnail:hover .lesson .status {
-  color: #004A55;
-}
-
-
-.thumbnail:hover .lesson {
-  color: #000;
+.module .module-title {
+  font-size: 32px;
+  color: #393939;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  padding-left: 10px;
+  border-left: 5px solid;
 }
 
+.module .module-description {
+  color: #333;
+  margin-bottom: 0;
+  display: inline-block;
+}
 
 /*Hover Animation*/
+.module .module-videos {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 25px 0 0;
+  padding: 0;
+}
+.module .module-videos li {
+  position: relative;
+  list-style: none;
+  margin-right: 2em;
+  width: 240px;
+}
 
-.thumbnail img {
+.module .module-videos img {
   display: block;
-  margin: 0 auto;
-    -moz-transition: all 0.6s ease;
-    -webkit-transition: all 0.6s ease;
-    -ms-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    transition: all 0.6s ease;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.thumbnail:hover img {
-    -moz-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-    z-index: 2;
-}
-
-.thumbnail .caption .description {
+.module .module-videos .video-title {
   display: block;
   text-align: center;
-  margin-top: .5em;
-}
-
-
-.thumbnail .caption .description .time {
+  margin-top: .2em;
   font-size: .9em;
-  display: inline-block;
-  padding: 2px 4px;
-  border: 1px solid #ccc;
-  color: #999;
-  margin-left: .5em;
 }
 
+.module .module-videos .video-number,
+.module .module-videos .video-length {
+  font-size: .9em;
+  display: block;
+  padding: 2px 4px;
+  border: 1px solid #777;
+  border-width: 0 1px 1px 0;
+  border-radius: 2px;
+  color: #eee;
+  background: rgba(50, 50, 50, .7);
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
+.module .module-videos .video-length {
+  left: auto;
+  right: 1px;
+  border-width: 0 0 1px 1px;
+}
 
 /*Video Block*/
 
@@ -573,8 +615,7 @@ a:focus {
 }
 
 .clientblock {
-    margin-top: 40px;
-    margin-left: 10px;
+    margin-top: 10px;
     text-align: center;
 }
 .clientblock img {
@@ -722,6 +763,11 @@ blockquote {
 
 /*========== 7. FAQ ==============*/
 
+
+.faq {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 25px;
+}
 .faq p {
     margin-bottom: 25px;
 }
@@ -730,7 +776,7 @@ blockquote {
 /*==========8. FOOTER ==============*/
 
 .footercta {
-    padding: 60px 15px;
+    padding: 30px 15px;
     color: #FFF;
     text-align: center;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
@@ -762,126 +808,114 @@ blockquote {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 991px) {
-    h1 {
-        font-size: 35px;
-        line-height: 50px;
-        margin: 15px 0;
-    }
-    h2 {
-        font-size: 35px;
-    }
-    .testimonials [class*="col-"]:not(:first-child) {
-        margin-top: 40px;
-    }
-    .planpricing [class*="col-"]:not(:first-child) {
-        margin-top: 30px;
-    }
-    .breath {
-        margin: 30px auto;
-    }
-    .scrollto,
-    .supporing-content img {
-      display: none;
-    }
-}
-
-@media (max-width: 767px) {
-    h1 {
-        font-size: 30px;
-        line-height: 40px;
-    }
-    h2 {
-        font-size: 30px;
-        line-height: 40px;
-    }
-    .subscribe [class*="col-"]:not(:first-child) {
-        margin-top: 30px;
-    }
-    .masthead {
-        padding: 40px 15px;
-    }
-    .thumbnail{
-      margin: 0;
-      padding: 0;
-    }
-    .lesson {
-      line-height: 1.2;
-    }
-
-    .instructor img {
-      width: 50%;
-    }
-    .testimonials .has-padding-top {
-      padding-top: 0;
-    }
-}
-
 @media (max-device-width: 992px) {
-    .masthead {
-        background-size: cover;
-        background-attachment: scroll;
-    }
+  .masthead {
+    padding: 1em 0;
+  }
 }
+@media (max-width: 991px) {
+  .main-title {
+      font-size: 35px;
+      line-height: 50px;
+      margin: 0;
+  }
+  h2 {
+      font-size: 24px;
+  }
+  .subtitle {
+      font-size: 30px;
+  }
+  .btn-outline.intro {
+    margin: 0;
+  }
+  .testimonials [class*="col-"]:not(:first-child) {
+      margin-top: 0;
+  }
+  .planpricing [class*="col-"]:not(:first-child) {
+      margin-top: 30px;
+  }
+  .breath {
+      margin: 15px auto;
+  }
+  hr {
+    margin: 10px 0;
+  }
 
-.signup-block {
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.25);
-    border-radius: 7px;
-    margin-bottom: 25px;
-}
+  .instructor {
+    text-align: center;
+  }
+  .module .module-description,
+  .module .module-number,
+  .module .module-title {
+    display: block;
+  }
 
-.form-group.last {
-    margin-bottom: 0;
-}
+  .module .module-title {
+    border-left: 0;
+    margin: 5px 0;
+    line-height: 1.2;
+    padding-left: 0;
+  }
 
-.multiple-btns .btn + .btn {
-    margin: 10px;
-}
-
-
-
-.color-white {
-    color: #FFF!important;
-}
-
-.clear-left {
-  clear: left;
-}
-
-.cta-btn {
-  width: 100%;
-  text-align: center;
-  margin: .5em 0;
-}
-
-.cta-btn del {
-  color: #FDDCCA;
-}
-
-.btn-outline {
-  border: 1px solid #ea5906;
-  color: #eee;
-  margin-top: 2.5em;
-  background: rgba(100,100,100,.1);
-}
-.btn-outline:hover,
-.btn-outline:focus {
-  color: #fff;
-  background: rgba(255,255,255,.2);
-}
-
-.btn-outline.intro {
-  margin: 1.5em auto 0;
-  width: 50%;
-  max-width: 28em;
-  clear: both;
-  display: block;
 }
 
 @media (max-width: 767px) {
+  .subscribe [class*="col-"]:not(:first-child) {
+      margin-top: 30px;
+  }
+  .thumbnail{
+    margin: 0;
+    padding: 0;
+  }
+  .lesson {
+    line-height: 1.2;
+  }
+
+  .instructor img {
+    width: 50%;
+  }
+
+  .section-title {
+    margin: 30px 0 15px;
+  }
+
+  .lessons-title {
+    text-align: left;
+    margin-top: 45px;
+  }
+
   .btn-outline.intro {
     width: auto;
+  }
+  .icon {
+    display: none;
+  }
+  .features-single h5,
+  .features-single p {
+    margin-left: 0;
+  }
+
+  .features {
+    padding: 0 15px;
+  }
+  .module .module-number {
+    font-size: 16px;
+  }
+  .module .module-title {
+    font-size: 24px;
+  }
+  .module .module-videos {
+    justify-content: center;
+  }
+  .module .module-videos li {
+    width: 200px;
+    margin-bottom: .5em;
+  }
+  .footercta {
+    padding: 25px 15px;
+  }
+  .footercta .section-title h2 {
+    margin: 0;
   }
 }
 
@@ -998,14 +1032,13 @@ blockquote {
   text-align: center;
   font-size: 28px;
   background: #f4f4f4;
-  line-height: .8;
 }
 .pricing-table .price {
   display: block;
-  padding: 15px 0;
   font-size: 98px;
   color: #000;
   margin-right: 20px;
+  line-height: .8;
 }
 .pricing-table .dollar {
   font-size: .6em;

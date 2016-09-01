@@ -227,8 +227,19 @@ a:focus {
   line-height: 1;
 }
 
+.masthead h2 {
+  margin-bottom: 2em;
+}
+
 .masthead .intro a {
-    color: #adb8c7;
+  color: #adb8c7;
+}
+
+.btn.initial-cta {
+  margin: 1em auto 0;
+  max-width: 500px;
+  display: block;
+  font-size: 1.3em;
 }
 
 /*animation ends*/
@@ -325,7 +336,6 @@ a:focus {
 .btn-outline {
   border: 1px solid #ea5906;
   color: #eee;
-  margin-top: 2.5em;
   background: rgba(100,100,100,.1);
 }
 .btn-outline:hover,
@@ -919,21 +929,14 @@ blockquote {
   }
 }
 
-#intro-video-container {
-  padding-top: .75em;
-}
-
 .intro-video {
-  display:none;
-  height: 315px;
+  height: auto;
   width: 100%;
   max-width: 560px;
-  text-align: center;
-  margin: 2em auto;
-}
-
-.intro-video iframe {
-  max-width: 100%;
+  cursor: pointer;
+  -webkit-box-shadow: -6px 0px 300px 0px rgba(255,255,255,0.1);
+  -moz-box-shadow: -6px 0px 300px 0px rgba(255,255,255,0.1);
+  box-shadow: -6px 0px 300px 0px rgba(255,255,255,0.1);
 }
 
 

@@ -5,8 +5,8 @@
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn Test Automation with WebdriverIO">
-    <title>Master Selenium Test Automation with this 12-part course on WebdriverIO</title>
+    <meta name="description" content="Learn Selenium Test Automation with WebdriverIO">
+    <title>Learn Selenium Test Automation with WebdriverIO</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -45,10 +45,6 @@
 </head>
 
 <body>
-    <!-- <div class="get-notified">
-      Heads up! This course is still <img src="images/under-construction.gif" alt="under construction"> <a href="http://eepurl.com/bXm_qf">Subscribe to receive updates as content is completed</a>.
-
-    </div> -->
     <!-- Header Starts -->
     <main id="top" class="masthead" role="main">
         <div class="container">
@@ -56,43 +52,37 @@
             <a href="http://lessons.learnwebdriverio.com/users/sign_in" class="sign-in">Already a student? Sign In</a>
 
             <h1 class="main-title">Break the testing bottleneck.</h1>
+            <h2>Cut your testing time in half by learning WebdriverIO.</h2>
 
             <div class="row">
-                <div class="col-sm-12 col-md-9 intro">
-                  <h2>Cut your testing time in half by learning WebdriverIO.</h2>
-
-                  <p>Forget the excruciating pain of manual testing AND the nightmare of setting up a complex test automation tool.</p>
-                  <p>WebdriverIO is:</p>
-                  <ul>
-                    <li>Simple to write</li>
-                    <li>Fully featured</li>
-                    <li>Just JavaScript</li>
-                  </ul>
-                  <p>This 12-part course dives deep into WebdriverIO, teaching you how to save time and effort with test automation.</p>
+              <div class="col-sm-12 col-md-6 intro">
+                <p>Forget the excruciating pain of manual testing AND the frustration of setting up a complex test automation tool.</p>
+                <p>WebdriverIO is:</p>
+                <ul>
+                  <li>Simple to write</li>
+                  <li>Fully featured</li>
+                  <li>Just JavaScript</li>
+                </ul>
+                <p>This 12-module course dives deep into WebdriverIO, giving you a great way to save time and effort with test automation.</p>
               </div>
-              <div class="col-md-3 hidden-sm hidden-xs"> <img src="images/logo-outline.png" alt="WebdriverIO Robot" class="img-responsive center-block"> </div>
-            </div>
-
-            <div id="intro-video-container">
-              <!-- // Supporting Content-->
-              <a href="#intro-video" class="btn btn-outline btn-lg intro" id="video-cta">Watch the Course Introduction</a>
-
-              <div class="intro-video" id="intro-video">
-                <iframe width="560" height="315" frameborder="0" allowfullscreen id="intro-vid-iframe"></iframe>
-                <a href="#pricing-anchor" class="btn btn-primary btn-lg cta-btn go_to_div" onclick="ga('send', 'event', 'Button', 'click', 'Video CTA');">Sound good? Ready to enroll?</a>
+              <div class="col-sm-12 col-md-6">
+                <video poster="images/thumb.jpg" src="intro.mp4" id="intro-vid" class="intro-video"></video>
 
                 <script>
-                  document.getElementById("video-cta").addEventListener("click", function () {
-                    document.getElementById("intro-vid-iframe").src = "https://www.youtube.com/embed/xXB2601jc7A?autoplay=1";
-                    $('html, body').stop().animate({scrollTop: $('#intro-video-container').offset().top});
-                    $('#intro-video').show();
-                    ga('send', 'event', 'Videos', 'play', 'Introduction');
-                    event.preventDefault()
+                  document.getElementById("intro-vid").addEventListener("click", function () {
+                    if (this.paused || this.ended) {
+                      this.play();
+                      ga('send', 'event', 'Videos', 'play', 'Introduction');
+                    } else {
+                      this.pause();
+                      ga('send', 'event', 'Videos', 'pause', 'Introduction');
+                    }
                   })
                 </script>
               </div>
-
             </div>
+
+            <a href="#pricing-anchor" class="btn btn-primary btn-lg cta-btn go_to_div initial-cta" onclick="ga('send', 'event', 'Button', 'click', 'Video CTA');">Ready to start?</a>
 
         </div>
     </main>
@@ -138,7 +128,7 @@
 
                     <p>Early-bird pricing is still available. Sign up today and save $100 off the full price of the course.</p>
 
-                    <a href="#pricing-anchor" class="btn btn-primary btn-lg cta-btn go_to_div" onclick="ga('send', 'event', 'Button', 'click', 'First CTA');">Enroll today!</a>
+                    <a href="#pricing-anchor" class="btn btn-outline btn-lg cta-btn go_to_div" onclick="ga('send', 'event', 'Button', 'click', 'First CTA');">Enroll today!</a>
                 </div>
               </div>
             </div>
@@ -546,7 +536,7 @@
           <h6>Is this like Kickstarter?</h6>
           <p>No. I'm making this course without funding on the side. There is no minimum amount of students required for the course to be made.</p>
 
-          <h6>Are courses DRM free?</h6>
+          <h6>Are the videos DRM free?</h6>
           <p>Definitely.</p>
 
           <h6>How will I access the course?</h6>

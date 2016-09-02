@@ -531,6 +531,57 @@ a:focus {
   border-radius: 5px;
 }
 
+.module .module-videos .video-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+
+}
+.module .module-videos .video-link .icon {
+  width: 3em;
+  height: 3em;
+  stroke-width: 0;
+  fill: rgba(0, 0, 0, 0.8);
+  margin-bottom: 3px;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s;
+}
+.module .module-videos .video-link:hover .icon {
+  fill: rgba(0, 0, 0, 0.9);
+}
+.module .module-videos .video-link.light .icon {
+  fill: rgba(255, 255, 255, 0.8);
+}
+.module .module-videos .video-link.light:hover .icon {
+  fill: #fff;
+}
+.module .module-videos .video-link span {
+  display: inline-block;
+  padding: 2px 4px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.75);
+  text-shadow: 1px 1px #000;
+  border-radius: 2px;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s;
+}
+.module .module-videos .video-link:hover span {
+  background: rgba(0, 0, 0, 0.9);
+}
+.module .module-videos .video-link.light span {
+  background: rgba(255, 255, 255, 0.15);
+}
+.module .module-videos .video-link.light:hover span {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .module .module-videos .video-title {
   display: block;
   text-align: center;

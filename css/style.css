@@ -230,6 +230,10 @@ a:focus {
 .masthead h2 {
   margin-bottom: 2em;
 }
+.masthead h2 span {
+  font-weight: normal;
+  font-size: 22px;
+}
 
 .masthead .intro a {
   color: #adb8c7;

@@ -648,6 +648,9 @@ a:focus {
 
 
 /*========== 5. TESTIMONIALS ==============*/
+.testimonials {
+  margin: 0;
+}
 
 .testblock {
     width: 100%;

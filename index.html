@@ -42,6 +42,10 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <script type="text/javascript">
+      var _paq = _paq || [];
+    </script>
 </head>
 
 <body>
@@ -71,20 +75,32 @@
                 <video poster="images/thumb.jpg" src="intro.mp4" id="intro-vid" class="intro-video"></video>
 
                 <script>
-                  document.getElementById("intro-vid").addEventListener("click", function () {
+                (function() {
+                  var video = document.getElementById("intro-vid");
+                  video.addEventListener("click", function () {
                     if (this.paused || this.ended) {
                       this.play();
-                      ga('send', 'event', 'Videos', 'play', 'Introduction');
+                      _paq.push(['trackEvent', 'Video', 'Play', 'Intro']);
                     } else {
                       this.pause();
-                      ga('send', 'event', 'Videos', 'pause', 'Introduction');
+                      _paq.push(['trackEvent', 'Video', 'Pause', 'Intro']);
                     }
-                  })
+                  });
+                  video.addEventListener('timeupdate', function () {
+                    var time = video.currentTime.toFixed(0);
+                    if (time % 15 == 0) {
+                      _paq.push(['trackEvent', 'Video', 'Progress', 'Intro', time]);
+                    }
+                  });
+                  video.addEventListener('ended', function () {
+                    _paq.push(['trackEvent', 'Video', 'Complete', 'Intro']);
+                  });
+                }());
                 </script>
               </div>
             </div>
 
-            <a href="#pricing-anchor" class="btn btn-primary btn-lg cta-btn go_to_div initial-cta" onclick="ga('send', 'event', 'Button', 'click', 'Video CTA');">Ready to start learning?</a>
+            <a href="#pricing-anchor" class="btn btn-primary btn-lg cta-btn go_to_div initial-cta" onclick="_paq.push(['trackEvent', 'Click', 'CTA', 'First']);">Ready to start learning?</a>
 
         </div>
     </main>
@@ -158,7 +174,7 @@
 
                     <p>Early-bird pricing is still available. Sign up today and save $100 off the full price of the course.</p>
 
-                    <a href="#pricing-anchor" class="btn btn-outline btn-lg cta-btn go_to_div" onclick="ga('send', 'event', 'Button', 'click', 'First CTA');">Enroll today!</a>
+                    <a href="#pricing-anchor" class="btn btn-outline btn-lg cta-btn go_to_div" onclick="_paq.push(['trackEvent', 'Click', 'CTA', 'Second']);">Enroll today!</a>
                 </div>
               </div>
             </div>
@@ -480,10 +496,10 @@
             <li><img src="images/slack.png" alt="" style="height:1.2em; vertical-align:text-top;"> Private Slack Room Access</li>
           </ul>
           <div class="cta">
-            <a href="http://lessons.learnwebdriverio.com/enroll/18028" target="_blank" class="btn btn-primary btn-lg cta-btn" onclick="ga('send', 'event', 'Button', 'click', 'Main CTA');">Enroll Now!</a>
+            <a href="http://lessons.learnwebdriverio.com/enroll/18028" target="_blank" class="btn btn-primary btn-lg cta-btn" onclick="_paq.push(['trackEvent', 'Click', 'CTA', 'Main']);">Enroll Now!</a>
           </div>
           <div style="padding:1em;">
-            Not ready to buy yet? <a href="http://eepurl.com/bXm_qf">Get updates</a> as the course is completed and lock in at today's price.
+            Not ready to buy yet? <a href="http://eepurl.com/bXm_qf" onclick="_paq.push(['trackEvent', 'Click', 'CTA', 'Email']);">Get updates</a> as the course is completed and lock in at today's price.
           </div>
         </div>
 
@@ -554,7 +570,7 @@
         </div>
         <section class="faq">
           <h6>When will the course be ready?</h6>
-          <p>I'm a working parent building this course in my free time, therefore it's hard to put a specific date on it. My aim is to have most of the lessons completed by the end of September 2016, but that date may change. You get immediate access to the lessons as I create them, so you won't have to wait until it's fully complete to access the content.</p>
+          <p>I'm a working parent building this course in my free time, therefore it's hard to put a specific date on it. My aim is to have most of the lessons completed by the end of October 2016, but that date may change. You get immediate access to the lessons as I create them, so you won't have to wait until it's fully complete to access the content.</p>
 
           <h6>I'm a front-end dev. Is this course for me?</h6>
           <p>Absolutely. WebdriverIO is a perfect fit for anyone with a little bit of JavaScript knowledge.</p>
@@ -576,9 +592,15 @@
 
           <h6>How will I access the course?</h6>
           <p>The course is hosted through thinkific.com, which is where you'll be able to access all the content indefinitely.</p>
+
+          <h6>Is there a student discount available?</h6>
+          <p>Definitely. <a href="mailto:&#113;&#117;&#101;&#115;&#116;&#105;&#111;&#110;&#115;&#064;&#108;&#101;&#097;&#114;&#110;&#119;&#101;&#098;&#100;&#114;&#105;&#118;&#101;&#114;&#105;&#111;&#046;&#099;&#111;&#109;" onclick="_paq.push(['trackEvent', 'Click', 'CTA', 'Contact']);">Contact me and I'll send you details.</a></p>
+
+          <h6>Are you available for online or in-person consulting?</h6>
+          <p>Yep. <a href="mailto:&#113;&#117;&#101;&#115;&#116;&#105;&#111;&#110;&#115;&#064;&#108;&#101;&#097;&#114;&#110;&#119;&#101;&#098;&#100;&#114;&#105;&#118;&#101;&#114;&#105;&#111;&#046;&#099;&#111;&#109;" onclick="_paq.push(['trackEvent', 'Click', 'CTA', 'Contact']);">Contact me for pricing and availability.</a></p>
         </section>
 
-        <p class="has-padding-bottom">Have a question I didn't answer? <a href="mailto:&#113;&#117;&#101;&#115;&#116;&#105;&#111;&#110;&#115;&#064;&#108;&#101;&#097;&#114;&#110;&#119;&#101;&#098;&#100;&#114;&#105;&#118;&#101;&#114;&#105;&#111;&#046;&#099;&#111;&#109;">Reach out and let me know</a>!</p>
+        <p class="has-padding-bottom">Have a question I didn't answer? <a href="mailto:&#113;&#117;&#101;&#115;&#116;&#105;&#111;&#110;&#115;&#064;&#108;&#101;&#097;&#114;&#110;&#119;&#101;&#098;&#100;&#114;&#105;&#118;&#101;&#114;&#105;&#111;&#046;&#099;&#111;&#109;" onclick="_paq.push(['trackEvent', 'Click', 'CTA', 'Contact']);">Reach out and let me know</a>!</p>
         <!-- // End FAQ -->
 
     </div>
@@ -590,7 +612,7 @@
       <div class="section-title">
           <h2>Confident Changes with Automated UI Testing</h2>
       </div>
-      <div class="text-center"> <a href="http://lessons.learnwebdriverio.com/enroll/18028" class="btn btn-primary btn-lg" onclick="ga('send', 'event', 'Button', 'click', 'Bottom CTA');">Enroll Now!</a> </div>
+      <div class="text-center"> <a href="http://lessons.learnwebdriverio.com/enroll/18028" class="btn btn-primary btn-lg" onclick="_paq.push(['trackEvent', 'Click', 'CTA', 'Bottom']);">Enroll Now!</a> </div>
     </section>
 
     <!-- //  Footer CTA Ends -->
@@ -646,17 +668,6 @@
     </script>
 
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-10401592-3', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-
-    <script>
       $(function() {
 
           // Scroll to Explore
@@ -673,10 +684,10 @@
 
     <!-- Piwik -->
     <script type="text/javascript">
-      var _paq = _paq || [];
       _paq.push(["setDomains", ["*.learnwebdriverio.com","*.learn.webdriver.io"]]);
       _paq.push(['trackPageView']);
       _paq.push(['enableLinkTracking']);
+      _paq.push(['enableHeartBeatTimer']);
       (function() {
         var u="//stats.klamp.in/";
         _paq.push(['setTrackerUrl', u+'piwik.php']);
@@ -686,6 +697,7 @@
       })();
     </script>
     <noscript><p><img src="//stats.klamp.in/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+
     <!-- End Piwik Code -->
 
 

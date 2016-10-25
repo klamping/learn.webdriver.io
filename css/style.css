@@ -243,7 +243,20 @@ a:focus {
   margin: 1em auto 0;
   max-width: 500px;
   display: block;
-  font-size: 1.3em;
+  text-align: center;
+  font-size: 1em;
+}
+@media (max-width: 766px) {
+  .btn.initial-cta {
+    white-space: normal;
+    padding: 8px 10px;
+  }
+}
+
+@media (min-width: 767px) {
+  .btn.initial-cta {
+    font-size: 1.3em;
+  }
 }
 
 /*animation ends*/
@@ -282,9 +295,10 @@ a:focus {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background-color: #ea5906!important;
-    color: #FFF!important;
-    border-color: #F68C03;
+  background-color: #F75E06!important;
+  color: #FFF!important;
+  border-color: #AA4104;
+  text-shadow: 1px 1px rgba(0, 0, 0, .33);
 }
 
 .btn-warning {
@@ -525,7 +539,8 @@ a:focus {
   position: relative;
   list-style: none;
   margin-right: 2em;
-  width: 240px;
+  flex: 1 1 240px;
+  max-width: calc(25% - 2em);
 }
 
 .module .module-videos img {
@@ -805,8 +820,6 @@ blockquote {
     padding: 25px;
     color: #FFF;
     text-align: center;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
 }
 
@@ -968,6 +981,11 @@ blockquote {
     padding-left: 0;
   }
 
+  .module .module-videos li {
+    margin-right: 1em;
+    max-width: calc(33% - 1em);
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -1015,12 +1033,8 @@ blockquote {
   .module .module-title {
     font-size: 24px;
   }
-  .module .module-videos {
-    justify-content: center;
-  }
   .module .module-videos li {
-    width: 200px;
-    margin-bottom: .5em;
+    max-width: calc(50% - 1em);
   }
   .footercta {
     padding: 25px 15px;
@@ -1030,6 +1044,13 @@ blockquote {
   }
 }
 
+@media (max-width: 500px) {
+  .module .module-videos li {
+    width: 100%;
+    margin: 0;
+    max-width: none;
+  }
+}
 .intro-video {
   height: auto;
   width: 100%;
@@ -1094,31 +1115,48 @@ blockquote {
     display: none;
   }
 }
-.pricing-table,
-.disclaimer {
-  margin: 1.5em auto;
-  width: 30em;
-  max-width: 95%;
-}
-.disclaimer {
-  margin-top: 1em;
-}
 
 #pricing-anchor {
   padding: 1em 0 0;
   display: inline-block;
 }
+.package-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .pricing-table {
   border: 1px solid rgba(33,33,33,.3);
   border-radius: 5px;
   overflow: hidden;
+  width: 30em;
+  margin-top: 1em;
 }
+.professional.pricing-table {
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  border: 0;
+}
+
+@media (min-width: 60em) {
+  .starter.pricing-table {
+    border-radius: 5px 0 0 5px;
+  }
+}
+
 .pricing-table .pricing-title {
   margin: 0;
   background: #333;
   color: #fff;
   padding: .5em;
   border-bottom: 1px solid #aaa;
+  text-align: center;
+}
+.starter.pricing-table .pricing-title {
+  background: #ccc;
+  color: #333;
 }
 .pricing-table .course-features {
   margin: 0;
@@ -1161,7 +1199,21 @@ blockquote {
   display: block;
   width: auto;
 }
+.starter.pricing-table .cta a {
+  background: #fff;
+  color: #ea5906;
+  border-color: #ea5906;
+}
+.starter.pricing-table .cta a:hover,
+.starter.pricing-table .cta a:focus {
+  background: #F75E06;
+}
 .fallback {
   text-align: center;
   display: block;
+}
+.disclaimer {
+  margin: 2em auto 1em;
+  width: 60em;
+  max-width: 95%;
 }

@@ -1130,19 +1130,27 @@ blockquote {
   border: 1px solid rgba(33,33,33,.3);
   border-radius: 5px;
   overflow: hidden;
-  width: 30em;
+  width: 90%;
   margin-top: 1em;
 }
 .professional.pricing-table {
-  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
   border: 0;
 }
 
 @media (min-width: 60em) {
+  .pricing-table {
+    max-width: 45%;
+  }
   .starter.pricing-table {
     border-radius: 5px 0 0 5px;
+  }
+  .professional.pricing-table {
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
   }
 }
 
@@ -1214,6 +1222,14 @@ blockquote {
 }
 .disclaimer {
   margin: 2em auto 1em;
-  width: 60em;
   max-width: 95%;
+}
+.free-trial-cta {
+  max-width: 35em;
+  margin: 2em auto 0;
+}
+@media (min-width: 60em) {
+  .disclaimer {
+    text-align: center;
+  }
 }

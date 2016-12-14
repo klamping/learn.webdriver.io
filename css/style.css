@@ -497,12 +497,34 @@ a:focus {
     border: 1px solid #eee;
     overflow: hidden;
     border-radius: 5px;
-    padding: 0 25px;
+    padding: 0;
 }
 
 .module {
   border-bottom: 1px solid #eee;
-  padding: 1.5em 0;
+  padding: 1.5em 25px;
+}
+
+.pro-modules {
+  border: 5px solid #ea5906;
+  background: #f9f9f9;
+  position: relative;
+}
+.pro-modules .section-title {
+  background: #ea5906;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+}
+
+.pro-modules .module {
+  margin: 5px;
+  border-bottom-color: #ddd;
+}
+
+.pro-modules .module:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
 }
 
 .module .module-number {

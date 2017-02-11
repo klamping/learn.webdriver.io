@@ -434,12 +434,6 @@ h2.section-title,
     h2 {
         font-size: 35px;
     }
-    .testimonials [class*="col-"]:not(:first-child) {
-        margin-top: 40px;
-    }
-    .planpricing [class*="col-"]:not(:first-child) {
-        margin-top: 30px;
-    }
     .breath {
         margin: 30px auto;
     }
@@ -543,20 +537,19 @@ h2.section-title,
 @media (min-width: 768px) {
     #clockdiv{
         text-align: center;
-        font-size: 30px;
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
         flex-wrap: wrap;
+        background: none;
     }
 
-    #clockdiv .section-title {
-        width: 100%;
-        margin: 0 0 15px;
-    }
-
-    #clockdiv .countdown-unit {
+    #clockdiv .countdown-item {
         padding: 10px;
         border-radius: 3px;
         background: #F75E06;
         margin: 0 10px;
+        flex: 0;
     }
 
     #clockdiv .countdown-amount {
@@ -565,6 +558,10 @@ h2.section-title,
         background: #C44B05;
         display: inline-block;
         font-family: monospace;
+    }
+
+    #clockdiv .countdown-unit {
+        font-size: 18px;
     }
 
 }

@@ -189,11 +189,15 @@ hr {
 
 .countdown {
     background: #F75E06;
-    text-align: center;
-    padding: 15px 5px;
+    padding: 15px;
     color: #fff;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
     font-size: 22px;
+}
+@media (min-width: 60em) {
+  .countdown {
+    text-align: center;
+  }
 }
 
 
@@ -399,7 +403,12 @@ h2.section-title,
 
 
 .supporing-content .thumb {
-    text-align: right;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .supporing-content .thumb {
+        text-align: right;
+    }
 }
 
 
@@ -515,70 +524,57 @@ h2.section-title,
 
 
 
-.col-xs-15,
-.col-sm-15,
-.col-md-15,
-.col-lg-15 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 10px;
-    padding-left: 10px;
+#clockdiv {
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    background: #F75E06;
+    padding: 10px;
+    text-align: center;
+}
+#clockdiv .countdown-item {
+    flex: 1 1 auto;
+}
+#clockdiv .countdown-unit {
+    display: inline;
 }
 
-.col-xs-15 {
-    width: 20%;
-    float: left;
+@media (min-width: 768px) {
+    #clockdiv{
+        text-align: center;
+        font-size: 30px;
+        flex-wrap: wrap;
+    }
+
+    #clockdiv .section-title {
+        width: 100%;
+        margin: 0 0 15px;
+    }
+
+    #clockdiv .countdown-unit {
+        padding: 10px;
+        border-radius: 3px;
+        background: #F75E06;
+        margin: 0 10px;
+    }
+
+    #clockdiv .countdown-amount {
+        padding: 15px;
+        border-radius: 3px;
+        background: #C44B05;
+        display: inline-block;
+        font-family: monospace;
+    }
+
 }
+
+
 @media (min-width: 768px) {
     .col-sm-15 {
         width: 20%;
         float: left;
     }
-}
-@media (min-width: 992px) {
-    .col-md-15 {
-        width: 20%;
-        float: left;
-    }
-}
-@media (min-width: 1200px) {
-    .col-lg-15 {
-        width: 20%;
-        float: left;
-    }
-}
-
-
-
-#clockdiv{
-    font-family: sans-serif;
-    color: #fff;
-    font-weight: 100;
-    text-align: center;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-#clockdiv .section-title {
-    width: 100%;
-    margin: 0 0 15px;
-}
-
-#clockdiv > div{
-    padding: 10px;
-    border-radius: 3px;
-    background: #F75E06;
-    margin: 0 10px;
-}
-
-#clockdiv div > span{
-    padding: 15px;
-    border-radius: 3px;
-    background: #C44B05;
-    display: inline-block;
-    font-family: monospace;
 }
 
 .smalltext{

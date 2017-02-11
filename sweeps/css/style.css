@@ -478,6 +478,11 @@ h2.section-title,
     margin-left: 15px;
 }
 
+
+#mce-responses {
+    margin-top: 1em;
+}
+
 @media (max-width:767px) {
     .form-group {
         flex-direction: column;
@@ -497,7 +502,6 @@ h2.section-title,
     }
     .form-group .btn {
         margin: 15px 0 0;
-        width: 95%;
     }
 }
 

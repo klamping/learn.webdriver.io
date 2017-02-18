@@ -46,10 +46,11 @@
     <script type="text/javascript">
       var _paq = _paq || [];
     </script>
+
 </head>
 
 <body>
-  <div class="countdown" id="countdown">
+  <!--<div class="countdown" id="countdown">
     Launch sale ends in
     <span class="days"></span>
     <span>days</span>,
@@ -59,54 +60,52 @@
     <span>minutes</span>,
     <span class="seconds"></span>
     <span>seconds</span>
-    <script>
+  </div>-->
 
+  <script>/*
+    function getTimeRemaining(endtime) {
+      var t = Date.parse(endtime) - Date.parse(new Date());
+      var seconds = Math.floor((t / 1000) % 60);
+      var minutes = Math.floor((t / 1000 / 60) % 60);
+      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+      };
+    }
 
+    function initializeClock(id, endtime) {
+      var clock = document.getElementById(id);
+      var daysSpan = clock.querySelector('.days');
+      var hoursSpan = clock.querySelector('.hours');
+      var minutesSpan = clock.querySelector('.minutes');
+      var secondsSpan = clock.querySelector('.seconds');
 
-      function getTimeRemaining(endtime) {
-        var t = Date.parse(endtime) - Date.parse(new Date());
-        var seconds = Math.floor((t / 1000) % 60);
-        var minutes = Math.floor((t / 1000 / 60) % 60);
-        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-        var days = Math.floor(t / (1000 * 60 * 60 * 24));
-        return {
-          'total': t,
-          'days': days,
-          'hours': hours,
-          'minutes': minutes,
-          'seconds': seconds
-        };
-      }
+      function updateClock() {
+        var t = getTimeRemaining(endtime);
 
-      function initializeClock(id, endtime) {
-        var clock = document.getElementById(id);
-        var daysSpan = clock.querySelector('.days');
-        var hoursSpan = clock.querySelector('.hours');
-        var minutesSpan = clock.querySelector('.minutes');
-        var secondsSpan = clock.querySelector('.seconds');
+        daysSpan.innerHTML = t.days;
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-        function updateClock() {
-          var t = getTimeRemaining(endtime);
-
-          daysSpan.innerHTML = t.days;
-          hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-          minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-          secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-          if (t.total <= 0) {
-            clearInterval(timeinterval);
-          }
+        if (t.total <= 0) {
+          clearInterval(timeinterval);
         }
-
-        updateClock();
-        var timeinterval = setInterval(updateClock, 1000);
       }
 
-      var deadline = new Date(2017, 1, 18);
+      updateClock();
+      var timeinterval = setInterval(updateClock, 1000);
+    }
 
-      initializeClock('countdown', deadline);
-    </script>
-  </div>
+    var deadline = new Date(2017, 1, 18);
+
+    initializeClock('countdown', deadline);*/
+  </script>
     <!-- Header Starts -->
     <main id="top" class="masthead" role="main">
         <div class="container">
@@ -252,7 +251,7 @@
             <p class="module-description">Get Robot Parts Emporium running locally</p>
             <ol class="module-videos">
               <li>
-                <a href="http://the-lamp-light.thinkific.com/enroll/18028?et=free_trial" class="video-link">
+                <a href="https://the-lamp-light.thinkific.com/enroll/18028?et=free_trial" class="video-link">
                   <svg class="icon"><use xlink:href="#icon-play-circle"></use></svg>
                   <span>Free Lesson</span>
                 </a>
@@ -270,7 +269,7 @@
             <p class="module-description">In just a few minutes you'll have your first test written.</p>
             <ol class="module-videos">
               <li>
-                <a href="http://the-lamp-light.thinkific.com/enroll/18028?et=free_trial" class="video-link">
+                <a href="https://the-lamp-light.thinkific.com/enroll/18028?et=free_trial" class="video-link">
                   <svg class="icon"><use xlink:href="#icon-play-circle"></use></svg>
                   <span>Free Lesson</span>
                 </a>
@@ -280,7 +279,7 @@
                 <p class="video-length">2:32</p>
               </li>
               <li>
-                <a href="http://the-lamp-light.thinkific.com/enroll/18028?et=free_trial" class="video-link light">
+                <a href="https://the-lamp-light.thinkific.com/enroll/18028?et=free_trial" class="video-link light">
                   <svg class="icon"><use xlink:href="#icon-play-circle"></use></svg>
                   <span>Free Lesson</span>
                 </a>
@@ -290,7 +289,7 @@
                 <p class="video-length">4:07</p>
               </li>
               <li>
-                <a href="http://the-lamp-light.thinkific.com/enroll/18028?et=free_trial" class="video-link light">
+                <a href="https://the-lamp-light.thinkific.com/enroll/18028?et=free_trial" class="video-link light">
                   <svg class="icon"><use xlink:href="#icon-play-circle"></use></svg>
                   <span>Free Lesson</span>
                 </a>
@@ -384,7 +383,7 @@
             <p class="module-description">The utility methods you need to know.</p>
             <ol class="module-videos">
               <li>
-                <a href="http://the-lamp-light.thinkific.com/enroll/18028?et=free_trial" class="video-link">
+                <a href="https://the-lamp-light.thinkific.com/enroll/18028?et=free_trial" class="video-link">
                   <svg class="icon"><use xlink:href="#icon-play-circle"></use></svg>
                   <span>Free Lesson</span>
                 </a>

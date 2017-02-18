@@ -1,0 +1,643 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*
+Theme Name: Multipurpose Landing Page Template - All in One
+Version: 1.0
+Author: Surjith SM
+Author URI: http://themeforest.net/user/surjithctly
+*/
+
+
+/******************  Table of Contents  *****************************/
+
+
+/*
+
+1. GLOBAL STYLES
+2. HEADER
+3. HERO IMAGE
+4. FEATURES
+5. TESTIMONIALS
+6. FAQ
+7. FOOTER
+8. CUSTOM MEDIA QUERIES
+
+If you having trouble in editing css. please send a mail to support@surjithctly.in -
+I will really help you
+
+*/
+
+
+/*========== 1. GLOBAL STYLES ==============*/
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #FFF;
+    font-weight: 400;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #496783;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+strong,
+b {
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #2C3D4F;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 22px;
+    margin: 10px 0;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+h5 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+h6 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+a {
+    color: #F75E06;
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+    color: #F75E06;
+}
+
+hr {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.btn,
+.btn-lg,
+.input-lg {
+    border-radius: 3px;
+}
+
+.form-control {
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.input-lg {
+    height: 55px;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+    padding: 7px 18px;
+    font-size: 22px;
+}
+
+.form-control:focus {
+    border-color: #AFBDC8;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.breath {
+    margin: 35px auto;
+}
+
+.highlight {
+    background: #f4f4f4;
+    margin-top: 40px;
+}
+
+.has-no-margin {
+    margin: 0;
+}
+
+.has-no-padding {
+    padding: 0;
+}
+
+.has-no-padding-horizontal {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.has-margin-vertical {
+    margin: 20px 0 30px;
+}
+
+.has-margin-top {
+    margin-top: 40px;
+}
+
+.has-margin-bottom {
+    margin-bottom: 40px;
+}
+
+.has-padding-top {
+    padding-top: 25px;
+}
+
+.has-padding-bottom {
+    padding-top: 25px;
+}
+
+
+.countdown {
+    background: #F75E06;
+    padding: 15px;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    font-size: 22px;
+}
+@media (min-width: 60em) {
+  .countdown {
+    text-align: center;
+  }
+}
+
+
+/*========== 2. HEADER ==============*/
+
+.masthead {
+    position: relative;
+    padding: 20px 15px;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
+    background-color: #323e4f;
+}
+
+.masthead .main-title {
+    color: #FFF;
+    margin-bottom: 0;
+}
+
+.masthead .sub-title {
+    color: #FBF7F7;
+    margin-top: 0;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+@media (max-width:767px) {
+    .masthead {
+        text-align: left;
+    }
+    .masthead .main-title {
+        line-height: 1.2;
+    }
+    .masthead .sub-title {
+        margin-top: 15px;
+        line-height: 1.3;
+    }
+}
+
+
+.masthead a {
+    color: #fff;
+}
+.masthead a:hover,
+.masthead a:focus {
+    text-shadow: 0 0 1px #F75E06;
+}
+
+.masthead .sub-title a {
+    font-weight: bold;
+}
+
+
+/*animation ends*/
+
+.logo {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.btn-success {
+    background-color: #F75E06;
+    background-image: none;
+    border: 0;
+    -webkit-box-shadow: 0 3px 0 #C44B05;
+    box-shadow: 0 3px 0 #C44B05;
+    line-height: 1.8;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+    background-color: #F87C32;
+    color: #FFF;
+    border: 0;
+    -webkit-box-shadow: 0 3px 0 #C44900;
+    box-shadow: 0 3px 0 #C44900;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .4);
+}
+
+.btn-primary {
+    background-color: #2db6d8;
+    background-image: none;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #209ab8!important;
+    color: #FFF!important;
+}
+
+.subscribe {
+    padding: 45px 0 0;
+}
+
+.alertMsg {
+    font-size: 14px;
+    display: block;
+    padding: 5px 17px;
+    text-align: center;
+}
+
+.masthead .form-control {
+    border: 0;
+}
+
+.form-control::-moz-placeholder {
+    color: #848E93;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #848E93;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #848E93;
+}
+
+/*Quick Features*/
+
+.quick-features {
+    text-align: left;
+}
+
+.features-lead {
+    margin-bottom: 30px;
+    color: #323e4f;
+}
+
+.featues-single {
+    margin-bottom: 30px;
+}
+
+.featues-single img {
+    margin-right: 25px;
+}
+
+.featues-single h5 {
+    margin-bottom: 10px;
+    margin-left: 85px;
+    color: #323e4f;
+}
+
+.featues-single p {
+    color: #adb8c7;
+    margin-left: 85px;
+    margin-bottom: 0;
+}
+
+.masthead .featues-single h5,
+.masthead .features-lead {
+    color: #fff;
+}
+
+
+/*========== 3. HERO IMAGE ==============*/
+
+.section-title {
+    margin: 30px 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2.section-title,
+.section-title h2 {
+    margin-bottom: 0;
+}
+
+
+/*========== 4. FEATURES ==============*/
+
+.features {
+    margin: 25px 0 0;
+}
+
+.thumbnail {
+    border: 0;
+    text-align: center;
+}
+
+
+/*Hover Animation*/
+
+.thumbnail img {
+    -moz-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.thumbnail:hover img {
+    -moz-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    z-index: 2;
+}
+
+
+.supporing-content .thumb {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .supporing-content .thumb {
+        text-align: right;
+    }
+}
+
+
+/*========== 7. FAQ ==============*/
+
+.faq p {
+    margin-bottom: 25px;
+}
+
+
+
+/*==========9. CUSTOM MEDIA QUERIES==============*/
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 991px) {
+    h1 {
+        font-size: 35px;
+        line-height: 50px;
+        margin: 15px 0;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    .breath {
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .subscribe [class*="col-"]:not(:first-child) {
+        margin-top: 30px;
+    }
+    .masthead {
+        padding: 40px 15px;
+    }
+}
+
+.signup-block {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 7px;
+    margin-bottom: 25px;
+}
+
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 10px;
+}
+
+.form-group .email {
+    width: 20em;
+}
+.form-group .btn {
+    margin-left: 15px;
+}
+
+
+#mce-responses {
+    margin-top: 1em;
+}
+
+@media (max-width:767px) {
+    .form-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe {
+        padding-top: 15px;
+    }
+    .form-group .mc-field-group {
+        flex: 1;
+        width: 95%;
+    }
+    .form-group .email {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+    .form-group .btn {
+        margin: 15px 0 0;
+    }
+}
+
+/*Layout 5 Event */
+
+.masthead.event {
+    background: url("../images/robots_@2X.png") center repeat;
+}
+
+@media (min-width:767px) {
+    .masthead.event {
+        padding: 120px 15px;
+    }
+}
+
+
+/*version 2*/
+
+
+
+#clockdiv {
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    background: #F75E06;
+    padding: 10px;
+    text-align: center;
+}
+#clockdiv .countdown-item {
+    flex: 1 1 auto;
+}
+#clockdiv .countdown-unit {
+    display: inline;
+}
+
+@media (min-width: 768px) {
+    #clockdiv{
+        text-align: center;
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: none;
+    }
+
+    #clockdiv .countdown-item {
+        padding: 10px;
+        border-radius: 3px;
+        background: #F75E06;
+        margin: 0 10px;
+        flex: 0;
+    }
+
+    #clockdiv .countdown-amount {
+        padding: 15px;
+        border-radius: 3px;
+        background: #C44B05;
+        display: inline-block;
+        font-family: monospace;
+    }
+
+    #clockdiv .countdown-unit {
+        font-size: 18px;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.page.confirm {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.page.confirm .masthead {
+    flex: 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+
+
+.video-preview img {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.video-preview {
+  position: relative;
+  margin-top: 2em;
+  text-align: center;
+}
+
+
+.video-preview a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+
+}
+.video-preview .icon {
+  width: 3em;
+  height: 3em;
+  stroke-width: 0;
+  fill: rgba(255, 255, 255, 0.8);
+  margin-bottom: 3px;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s;
+}
+.video-preview:focus .icon,
+.video-preview:hover .icon {
+  fill: #fff;
+}
+
+.share {
+    margin-top: 2em;
+}

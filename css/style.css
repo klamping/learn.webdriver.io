@@ -246,6 +246,22 @@ a:focus {
   text-align: center;
   font-size: 1em;
 }
+.initial-cta-free-trial {
+  margin: 1em auto 0;
+  max-width: 500px;
+  display: block;
+  text-align: center;
+  font-size: 1em;
+}
+.initial-cta-free-trial a {
+  color: #adb8c7;
+  text-decoration: none;
+}
+.initial-cta-free-trial a:hover,
+.initial-cta-free-trial a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
 @media (max-width: 766px) {
   .btn.initial-cta {
     white-space: normal;

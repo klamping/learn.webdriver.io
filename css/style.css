@@ -238,6 +238,9 @@ a:focus {
 .masthead .intro a {
   color: #adb8c7;
 }
+.masthead .intro p {
+  margin-bottom: 1.5em;
+}
 
 .btn.initial-cta {
   margin: 1em auto 0;

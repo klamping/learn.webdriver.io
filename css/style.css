@@ -225,10 +225,12 @@ a:focus {
   margin-top: 1em;
   margin-bottom: 0;
   line-height: 1;
+  text-align: center;
 }
 
 .masthead h2 {
   margin-bottom: 2em;
+  text-align: center;
 }
 .masthead h2 span {
   font-weight: normal;
@@ -245,9 +247,19 @@ a:focus {
 .btn.initial-cta {
   margin: 1em auto 0;
   max-width: 500px;
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1em;
+}
+.btn.initial-cta .icon {
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  margin-left: .5em;
 }
 .initial-cta-free-trial {
   margin: 1em auto 0;
@@ -503,7 +515,6 @@ a:focus {
   fill: #323232;
   opacity: .7;
 }
-
 
 /*========== 4. FEATURES ==============*/
 
@@ -982,7 +993,8 @@ blockquote {
   .main-title {
       font-size: 35px;
       line-height: 50px;
-      margin: 0;
+      margin: 1em 0 0;
+      // text-align: left;
   }
   h2 {
       font-size: 24px;
@@ -1093,6 +1105,9 @@ blockquote {
   }
 }
 .intro-video {
+  text-align: center;
+}
+.intro-video video {
   height: auto;
   width: 100%;
   max-width: 560px;

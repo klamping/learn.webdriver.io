@@ -1340,3 +1340,22 @@ blockquote {
   background: #bbb;
   cursor: default;
 }
+
+
+.why {
+  padding-bottom: 5em;
+  color: #555;
+  width: 100%;
+}
+.why-content {
+  max-width: 70em;
+  margin: 0 auto;
+}
+.why p {
+  font-size: 1.4em;
+  margin-bottom: 1.5em;
+}
+.why ul {
+  font-size: 1.3em;
+  margin-bottom: 1.5em;
+}

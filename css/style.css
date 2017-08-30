@@ -1292,6 +1292,25 @@ blockquote {
 }
 
 
+.welcome {
+  background: #F75E06;
+  text-align: center;
+  padding: 15px 5px;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  font-size: 22px;
+  z-index: 10;
+}
+.welcome a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #202020;
+}
+.welcome + .masthead {
+  padding-top: 2em;
+}
+
+
 .countdown {
   background: #F75E06;
   text-align: center;

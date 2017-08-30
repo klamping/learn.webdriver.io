@@ -96,10 +96,15 @@
       var timeinterval = setInterval(updateClock, 1000);
     }
 
-    var deadline = new Date(2017, 2, 1);
+    // var deadline = new Date(2017, 2, 1);
 
     // initializeClock('countdown', deadline);
   </script>
+
+  <div class="welcome" style="display: none;">
+    Welcome from the official WebriverIO site! Use coupon code <strong><em>wdio</em></strong> to take $10 off.
+  </div>
+
     <!-- Header Starts -->
     <main id="top" class="masthead" role="main">
         <div class="container">
@@ -912,6 +917,10 @@
       var queryString = window.location.search;
 
       if (queryString.length > 0) {
+        if (queryString.indexOf("coupon=wdio") > -1) {
+          $('.welcome').css({display:'block'});
+        }
+
         // add query string to every link
         $('.course-link').each(function () {
           var newHref = $( this ).attr('href') + queryString;

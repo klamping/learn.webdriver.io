@@ -96,10 +96,15 @@
       var timeinterval = setInterval(updateClock, 1000);
     }
 
-    var deadline = new Date(2017, 2, 1);
+    // var deadline = new Date(2017, 2, 1);
 
     // initializeClock('countdown', deadline);
   </script>
+
+  <div class="welcome" style="display: none;">
+    Welcome from the official WebriverIO site! Use coupon code <strong><em>wdio</em></strong> to take $10 off.
+  </div>
+
     <!-- Header Starts -->
     <main id="top" class="masthead" role="main">
         <div class="container">
@@ -231,9 +236,9 @@
                 <!-- Signup form -->
                 <div class="contact-form">
                     <!--<div class="point-arrow hidden-xs hidden-sm"><img src="images/arrow-form.png" align="arrow" /> </div>-->
-                    <h3 class="mini-title">Save $80 by enrolling today!</h3>
+                    <h3 class="mini-title">Save $50 by enrolling today! </h3>
 
-                    <p>The summer discount price is still available. Sign up today and save $80 off the full price of the professional bundle.</p>
+                    <p>The special discount price is still available. Sign up today and save $50 off the full price of the professional bundle.</p>
 
                     <a href="#pricing-anchor" class="btn btn-outline btn-lg cta-btn go_to_div" onclick="_paq.push(['trackEvent', 'Click', 'CTA', 'Second']);">Enroll today!</a>
                 </div>
@@ -712,10 +717,10 @@
             <h2 class="pricing-title">Starter</h2>
             <ul class="course-features">
               <li class="discount-feature">
-                <p>July Discount Price</p>
-                <div class="price">
-                  <p class="discount-price" style="margin-top: 10px;"><sup class="dollar">$</sup>87</p>
-                  <p class="full-price"><sup class="dollar">$</sup><del>127</del></p>
+                <!-- <p>Discount Price</p> -->
+                <div class="price" style="padding: 10px;">
+                  <p class="discount-price" style="margin-top: 10px;"><sup class="dollar">$</sup>127</p>
+                  <!-- <p class="full-price"><sup class="dollar">$</sup><del>127</del></p> -->
                 </div>
               </li>
               <li>First 6 Modules / 28 Videos</li>
@@ -724,16 +729,16 @@
               <li>30-day money-back guarantee</li>
             </ul>
             <div class="cta">
-              <a href="https://the-lamp-light.thinkific.com/enroll/18028" target="_blank" class="btn btn-primary btn-lg cta-btn" onclick="_paq.push(['trackEvent', 'Click', 'Buy', 'Starter']);">Enroll Now!</a>
+              <a href="https://the-lamp-light.thinkific.com/enroll/18028" target="_blank" class="btn btn-primary btn-lg cta-btn course-link" onclick="_paq.push(['trackEvent', 'Click', 'Buy', 'Starter']);">Enroll Now!</a>
             </div>
           </div>
           <div class="package pricing-table professional">
             <h2 class="pricing-title">Professional</h2>
             <ul class="course-features">
               <li class="discount-feature">
-                <p>July Discount Price</p>
-                <div class="price">
-                  <p class="discount-price"><sup class="dollar">$</sup>167</p>
+                <p>Special Discount Price</p>
+                <div class="price" style="padding: 10px;">
+                  <p class="discount-price"><sup class="dollar">$</sup>197</p>
                   <p class="full-price"><sup class="dollar">$</sup><del>247</del></p>
                 </div>
               </li>
@@ -744,7 +749,7 @@
               <li>30 day money-back guarantee</li>
             </ul>
             <div class="cta">
-              <a href="https://the-lamp-light.thinkific.com/enroll/52371" target="_blank" class="btn btn-primary btn-lg cta-btn" onclick="_paq.push(['trackEvent', 'Click', 'Buy', 'Pro']);">Enroll Now!</a>
+              <a href="https://the-lamp-light.thinkific.com/enroll/52371" target="_blank" class="btn btn-primary btn-lg cta-btn course-link" onclick="_paq.push(['trackEvent', 'Click', 'Buy', 'Pro']);">Enroll Now!</a>
             </div>
           </div>
         </div>
@@ -907,6 +912,23 @@
         infinite: true,
         arrows: false
       });
+
+      // get window query string
+      var queryString = window.location.search;
+
+      if (queryString.length > 0) {
+        if (queryString.indexOf("coupon=wdio") > -1) {
+          $('.welcome').css({display:'block'});
+        }
+
+        // add query string to every link
+        $('.course-link').each(function () {
+          var newHref = $( this ).attr('href') + queryString;
+          $( this ).attr('href', newHref);
+        });
+      }
+
+
     </script>
 
     <!-- Piwik -->

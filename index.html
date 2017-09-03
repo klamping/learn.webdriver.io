@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn Selenium Test Automation with WebdriverIO">
-    <title>Learn WebdriverIO and Selenium Test Automation</title>
+    <title>Learn Selenium Test Automation with WebdriverIO</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -111,63 +111,41 @@
 
             <a href="https://the-lamp-light.thinkific.com/users/sign_in" class="sign-in">Already a student? Sign In</a>
 
-            <h1 class="main-title">Learn WebdriverIO - The Smarter, Easier Way</h1>
-            <h2>Bite-size video lessons built to accelerate your learning</h2>
-
-            <div class="row">
-              <div class="col-sm-12 col-md-6 intro">
-                <p>Learn to test your websites with WebdriverIO and Selenium.</p>
-
-                <p>Watch fifty <strong>clear and concise</strong> tutorials that cover everything from initial setup to advanced usage.</p>
-
-                <p>Get up to speed faster with guided examples that show real-world techniques.</p>
-              </div>
-
-              <div class="col-sm-12 col-md-6 intro-video">
-                <video poster="images/thumb.jpg" src="course-intro-v3.mp4" id="intro-vid" preload="auto"></video>
-
-                <script>
-                (function() {
-                  var video = document.getElementById("intro-vid");
-                  video.addEventListener("click", function () {
-                    if (this.paused || this.ended) {
-                      this.play();
-                      _paq.push(['trackEvent', 'Video', 'Play', 'Intro']);
-                    } else {
-                      this.pause();
-                      _paq.push(['trackEvent', 'Video', 'Pause', 'Intro']);
-                    }
-                  });
-                  video.addEventListener('timeupdate', function () {
-                    var time = video.currentTime.toFixed(0);
-                    if (time % 15 == 0) {
-                      _paq.push(['trackEvent', 'Video', 'Progress', 'Intro', time]);
-                    }
-                  });
-                  video.addEventListener('ended', function () {
-                    _paq.push(['trackEvent', 'Video', 'Complete', 'Intro']);
-                  });
-                }());
-                </script>
-              </div>
-            </div>
-
-            <a href="#pricing-anchor" class="btn btn-primary btn-lg cta-btn go_to_div initial-cta" onclick="_paq.push(['trackEvent', 'Click', 'CTA', 'First']);">Join the Course</a>
-            <p class="initial-cta-free-trial">&mdash;&nbsp;&nbsp;&nbsp;<a href="#modules" class="go_to_div" onclick="_paq.push(['trackEvent', 'Click', 'CTA', 'free-trial']);">or watch the first lessons for free</a>&nbsp;&nbsp;&nbsp;&mdash;</p>
+            <h1 class="main-title">Master Selenium Test Automation with WebdriverIO</h1>
+            <h2>Shine At Work And Amaze Your Boss With Your Superhero Abilities</h2>
 
         </div>
     </main>
 
+
     <div class="highlight testimonials">
         <div class="container">
-
             <!-- Testimonials -->
 
+
+            <section class="row has-margin-bottom">
+                <div class="col-md-5 col-md-offset-1">
+                    <blockquote class="has-padding-top">&ldquo;I really enjoyed going through all videos, <strong>they are awesome</strong> and explain the concepts of WebdriverIO really well.&rdquo;</blockquote>
+                    <div class="clientblock">
+                        <img src="images/cbro.png" alt="">
+                        <p><strong>Christian Bromann</strong>
+                            <br> WebdriverIO Maintainer</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <blockquote class="has-padding-top">&ldquo;<strong>Bang on the money</strong> in terms of content as no one else seems to be doing a course like this on the net; trust me I've looked.&rdquo;</blockquote>
+                    <div class="clientblock">
+                        <img src="images/grant.jpg" alt="">
+                        <p><strong>Grant Horner</strong>
+                            <br> QA Test Analyst</p>
+                    </div>
+                </div>
+            </section>
             <section class="row has-margin-top text-center">
               <div class="star-rating">
-                <span style="width:96%"></span>
+                <span style="width:95%"></span>
               </div>
-              <h3>Students rate it 4.8 out of 5 stars</h3>
+              <h3>Students rate it 4.8 stars (out of 5)!</h3>
               <div class="course-reviews">
                   <ul>
                     <li>"Great course. Really simple to follow. Can't wait for the next chapters!"</li>
@@ -176,109 +154,109 @@
                   </ul>
               </div>
             </section>
-
-            <section class="row has-margin-bottom">
-                <div class="col-md-5 col-md-offset-1">
-                    <blockquote class="has-padding-top">&ldquo;I really enjoyed going through all videos, they are awesome and explain the concepts of WebdriverIO really well.&rdquo;</blockquote>
-                    <div class="clientblock">
-                        <img src="images/cbro.png" alt="">
-                        <p><strong>Christian Bromann</strong>
-                            <br> WebdriverIO Maintainer</p>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <blockquote class="has-padding-top">&ldquo;Bang on the money in terms of content as no one else seems to be doing a course like this on the net; trust me I've looked.&rdquo;</blockquote>
-                    <div class="clientblock">
-                        <img src="images/grant.jpg" alt="">
-                        <p><strong>Grant Horner</strong>
-                            <br> QA Test Analyst</p>
-                    </div>
-                </div>
-            </section>
             <!-- // End Testimonials -->
         </div>
-    </div>
 
-    <!-- Container -->
-    <div class="container" id="explore">
+        <hr />
 
-        <!--Supporting Content-->
+        <div class="container why highlight">
+          <div class="section-title">
+              <h2>Why Learn WebdriverIO?</h2>
+          </div>
 
-        <section class="supporing-content">
+          <div class="why-content">
+            <p>It took me three years to settle on a test automation framework.</p>
 
-            <h2 class="subtitle">Save Time. Save Effort. Learn WebdriverIO.</h2>
+            <p>But WebdriverIO was worth the wait.</p>
 
-            <hr>
+            <p>I love it for it's amazing features and simplicity in design.</p>
 
-            <div class="row">
-              <!-- Quick Features and form -->
-              <div class="col-sm-12 col-md-8">
-                <div class="quick-features">
-                    <div class="features-single">
-                        <svg class="icon icon-clock pull-left"><use xlink:href="#icon-clock"></use></svg>
-                        <h5>Save time and stop fire-fighting production defects</h5>
-                        <p>Catch bugs early and seamlessly integrate tests into your development process.</p>
-                    </div>
-                    <div class="features-single">
-                        <svg class="icon icon-bug pull-left"><use xlink:href="#icon-bug"></use></svg>
-                        <h5>Save effort and stop manually testing the same specs</h5>
-                        <p>Effortlessly validate functionality with a comprehensive suite of automated tests.</p>
-                    </div>
-                    <div class="features-single">
-                        <svg class="icon icon-shield pull-left"><use xlink:href="#icon-shield"></use></svg>
-                        <h5>Learn Visual Regression Testing and protect your site from design drift</h5>
-                        <p>See how WebdriverCSS can identify and flag design changes when they happen.</p>
-                    </div>
-                </div>
-              </div>
+            <p>As someone who has seen every flavor of test tool out there, I can honestly say that WebdriverIO takes the cake.</p>
 
-              <div class="col-sm-12 col-md-4">
-                <!-- Signup form -->
-                <div class="contact-form">
-                    <!--<div class="point-arrow hidden-xs hidden-sm"><img src="images/arrow-form.png" align="arrow" /> </div>-->
-                    <h3 class="mini-title">Save $50 by enrolling today! </h3>
+            <p>Why? Because it's:</p>
 
-                    <p>The special discount price is still available. Sign up today and save $50 off the full price of the professional bundle.</p>
+            <ul>
+              <li>Quick to set up and write</li>
+              <li>Written in a simple, well-known language (JavaScript)</li>
+              <li>Feature-rich while being streamlined</li>
+            </ul>
 
-                    <a href="#pricing-anchor" class="btn btn-outline btn-lg cta-btn go_to_div" onclick="_paq.push(['trackEvent', 'Click', 'CTA', 'Second']);">Enroll today!</a>
-                </div>
-              </div>
-            </div>
-        </section>
-    </div>
+            <p>As a Front-end Engineer, I love the technology almost more than CSS or HTML (Is that too nerdy to say?).</p>
 
+            <p>Simply put, WebdriverIO makes testing accessible to me.</p>
 
+            <p><strong>But...</strong></p>
 
-    <!-- Container -->
-    <div class="container why highlight">
+            <p>As incredible as I think WebdriverIO is, it still required a pricey investment to learn.</p>
 
-        <!-- FAQ -->
-        <div class="section-title">
-            <h2>Why this course?</h2>
+            <p>I spent six months of my job reading through documentation and searching through source code.</p>
+
+            <p>By the end of those months, I understood WebdriverIO, but my boss didn't understand the investment I had made.</p>
+
+            <p><strong>I had already run out of time before even starting with the real work.</strong></p>
+
+            <p>I knew I loved the tool, and didn't want others to face this same reality.</p>
+
+            <p>So I made a course about it, which is what you see here.</p>
+
+            <p>For this course, I had three goals:</p>
+            <ul>
+              <li><strong>Make it super easy for folks to learn the fundamentals of WebdriverIO.</strong> They should be able to write their first set of tests after only a few videos.</li>
+              <li><strong>Keep the videos clear and concise.</strong> Teach as much information as I can in as a little time as possible.</li>
+              <li><strong>Cover advanced topics that trip folks up.</strong> These are the things that delay progress for weeks and cause managers to get grumpy.</li>
+            </ul>
+
+            <p>I knew this was an really niche tool to create a course on, but I wanted this video series to be as best as I could make it, and I honestly think I accomplished that.</p>
+            <p>I've gotten a lot of value out of "bite-sized" videos throughout the years (hat tip <a href="https://egghead.io">egghead.io</a>), so following that style really fit with my goals.</p>
+            <p>That's why I think folks like you will find this course worth paying for.</p>
+            <p>In 5 hours of content, I teach what took me over a thousand hours to learn. That easily pays for itself in time saved.</p>
+            <p>When I started building the course, I came up with the tagline "Save time. Save effort. Learn WebdriverIO". Not amazingly original, but it fits so well.</p>
+            <p>Test automation tools like WebdriverIO will save you time and effort in your work by automating the manual steps of testing.</p>
+            <p>And I promise to save you time and effort by teaching you WebdriverIO in the most efficient and effective way I know how.</p>
+            <p>Don't trust me? Well, that's why there's a 30-day money-back guarantee.</p>
+            <p><strong>If you don't find the content valuable for any reason, just email me and I'll refund your money ASAP.</strong></p>
+            <p>Don't mess around learning alone when you have a full course available at the cost of a couple hours of work.</p>
+            <p>Learn WebdriverIO and become a test automation pro, enhancing your value at work and improving your ability to get things done.</p>
         </div>
-
-        <div class="why-content">
-
-          <p>When I first started learning WebdriverIO, it took me 6 months of reading through detailed documentation and searching through source code to really understand the tool. It took another 14 months to create a video course about it.</p>
-
-          <p>That's why I had these goals in mind when making this course:</p>
-          <ul>
-            <li><strong>Make it super easy for folks to learn the fundamentals of WebdriverIO.</strong> They should be able to write their first set of tests after only a few videos.</li>
-            <li><strong>Keep the videos clear and concise.</strong> Teach as much information as I can in as a little time as possible.</li>
-            <li><strong>Cover advanced topics that trip folks up.</strong> These are the things that delay progress for weeks and cause managers to get grumpy.</li>
-          </ul>
-
-          <p>I know this is an really niche tool to create a course on, but I wanted this video series to be as best as I could make it, and I honestly think I accomplished that.</p>
-          <p>I've gotten a lot of value out of "bite-sized" videos throughout the years (hat tip <a href="https://egghead.io">egghead.io</a>), so following that style really fit with my goals.</p>
-          <p>That's why I think folks like you will find this course worth paying for. In 5 hours of content, I teach what took me over a thousand hours to learn. That easily pays for itself in time saved.</p>
-          <p>When I started building the course, I came up with the tagline "Save time. Save effort. Learn WebdriverIO". Not amazingly original, but it fits so well.</p>
-          <p>Test automation tools like WebdriverIO promise to save you time and effort in your work by automating the manual steps of testing.</p>
-          <p>And I promise to save you time and effort by teaching you WebdriverIO in the most efficient and effective way I know how.</p>
-          <p>Don't trust me? Well, that's why there's a 30-day money-back guarantee. If you don't find the content valuable for any reason, just email me and I'll refund your money ASAP.</p>
-          <p>Don't mess around learning alone when you have a full course available at the cost of a couple hours of work.</p>
-
       </div>
     </div>
+
+
+
+    <div class="masthead">
+        <h2 class="has-padding-bottom">Let Me Show You How To Rock At Functional Testing</h2>
+        <div class="intro-video">
+              <video poster="images/thumb.jpg" src="course-intro-v3.mp4" id="intro-vid" preload="auto"></video>
+              <script>
+              (function() {
+                var video = document.getElementById("intro-vid");
+                video.addEventListener("click", function () {
+                  if (this.paused || this.ended) {
+                    this.play();
+                    _paq.push(['trackEvent', 'Video', 'Play', 'Intro']);
+                  } else {
+                    this.pause();
+                    _paq.push(['trackEvent', 'Video', 'Pause', 'Intro']);
+                  }
+                });
+                video.addEventListener('timeupdate', function () {
+                  var time = video.currentTime.toFixed(0);
+                  if (time % 15 == 0) {
+                    _paq.push(['trackEvent', 'Video', 'Progress', 'Intro', time]);
+                  }
+                });
+                video.addEventListener('ended', function () {
+                  _paq.push(['trackEvent', 'Video', 'Complete', 'Intro']);
+                });
+              }());
+              </script>
+
+            <a href="#pricing-anchor" class="btn btn-primary btn-lg cta-btn go_to_div initial-cta" onclick="_paq.push(['trackEvent', 'Click', 'CTA', 'First']);">Join the Course</a>
+        </div>
+    </div>
+
+    <!-- Bite-size video lessons built to accelerate your learning -->
+
 
     <!-- Features Section -->
     <div class="container" id="modules">
@@ -710,6 +688,35 @@
 
         </section>
 
+    </div>
+
+    <!-- Grey Highlight Section -->
+    <div class="highlight has-margin-top has-margin-bottom  has-padding-bottom">
+        <div class="container">
+            <section class="row">
+                <div class="col-md-5">
+                    <div class="instructor">
+                        <img src="images/profile.jpg" alt="Kevin Lamping">
+                    </div>
+                </div>
+                <div class="col-md-6 has-padding-top">
+                    <h4>Meet Your Teacher: Kevin Lamping</h4>
+                    <h5>WebdriverIO contributor &amp; Senior Front-end Engineer</h5>
+                    <p>Kevin has over 10-years experience as a Front-end Engineer. He's released <a href="https://learn.visualregressiontesting.com/">a free 6-day email course on Visual Regression Testing</a> and runs <a href="http://frontendtesting.com">frontendtesting.com</a>. He has presentated multiple times on Front-end Testing at various conferences.</p>
+
+                    <p>Along with that, he helps run <a href="http://visualregressiontesting.com">testyourlog.in</a> and <a href="http://www.meetup.com/San-Antonio-JavaScript-User-Group/">Hill Country JS</a>, a Front-end meetup in San Antonio.</p>
+
+                    <p>In his free-time, when he's not playing with his kids, Kevin dabbles in scale model building, tabletop gaming, piano and gardening.</p>
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+    <!-- // End Grey Highlight Section -->
+
+    <!-- Features Section -->
+    <div class="container has-margin-bottom">
         <a id="pricing-anchor" name="pricing-anchor"></a>
         <h2 class="subtitle">Choose your package:</h2>
         <div class="package-options">
@@ -753,37 +760,11 @@
             </div>
           </div>
         </div>
-
-
-
-
+      </div>
     </div>
     <!-- // Container Ends -->
 
-    <!-- Grey Highlight Section -->
-    <div class="highlight">
-        <div class="container">
-            <section class="row has-margin-bottom">
-                <div class="col-md-5">
-                    <div class="instructor">
-                        <img src="images/profile.jpg" alt="Kevin Lamping">
-                    </div>
-                </div>
-                <div class="col-md-6 has-padding-top">
-                    <h4>Meet your instructor: Kevin Lamping</h4>
-                    <h5>WebdriverIO contributor &amp; Senior Front-end Engineer</h5>
-                    <p>Kevin has over 10-years experience as a Front-end Engineer. He recently released <a href="https://learn.visualregressiontesting.com/">a free 6-day email course on Visual Regression Testing</a> and runs <a href="http://frontendtesting.com">frontendtesting.com</a>. He has presentated multiple times on Front-end Testing at various conferences.</p>
-
-                    <p>Along with that, he helps run <a href="http://visualregressiontesting.com">visualregressiontesting.com</a> and <a href="http://www.meetup.com/San-Antonio-JavaScript-User-Group/">Hill Country JS</a>, a Front-end meetup in San Antonio.</p>
-
-                    <p>In his free-time, when he's not playing with his kids, Kevin dabbles in scale model building, tabletop gaming, piano and gardening.</p>
-                </div>
-
-            </section>
-
-        </div>
-    </div>
-    <!-- // End Grey Highlight Section -->
+    <hr />
 
     <!-- Container -->
     <div class="container">
@@ -793,26 +774,21 @@
             <h2>Frequently Asked Questions</h2>
         </div>
         <section class="faq">
-          <h6>I'm a front-end dev. Is this course for me?</h6>
-          <p>Absolutely. WebdriverIO is a perfect fit for anyone with a little bit of JavaScript knowledge.</p>
-
           <h6>What prerequisites are there to this course?</h6>
           <p>You should have a good understanding of JavaScript and we'll be doing a little bit of work on the command line.</p>
 
-          <h6>What is WebdriverIO</h6>
-          <p>WebdriverIO is <em>the</em> Selenium test automation tool that is:</p>
-          <ul>
-            <li>quick to set up and write</li>
-            <li>Front-end Engineer friendly</li>
-            <li>feature-rich and streamlined</li>
-          </ul>
-          <p>As a Front-end Engineer, I really love the technology. It makes testing accessible and fits my skillset perfectly.</p>
+          <p>If you're new to JavaScript, <a href="https://www.youtube.com/watch?v=le-URjBhevE&list=PLWKjhJtqVAbk2qRZtWSzCIN38JC_NdhW5">check out this free course to get started</a>.</p>
+
+          <p>If you haven't worked with the command line before, <a href="https://commandlinepoweruser.com/">here's another free course on the subject</a>.</p>
+
+          <h6>What if I don't like the content?</h6>
+          <p>If you feel like the content isn't what you were expecting, let me know within 30 days of purchase and I'll give you a full refund ASAP.</p>
 
           <h6>Is there a team license available?</h6>
           <p>There is a team license available for up to 10 individuals. <a href="mailto:&#113;&#117;&#101;&#115;&#116;&#105;&#111;&#110;&#115;&#064;&#108;&#101;&#097;&#114;&#110;&#119;&#101;&#098;&#100;&#114;&#105;&#118;&#101;&#114;&#105;&#111;&#046;&#099;&#111;&#109;">Contact me for details.</a></p>
 
-          <h6>What if I don't like the content?</h6>
-          <p>If you feel like the content isn't what you were expecting, let me know within 30 days of purchase and I'll give you a full refund.</p>
+          <h6>I'm a front-end dev. Is this course for me?</h6>
+          <p>Absolutely. WebdriverIO is a perfect fit for anyone with a little bit of JavaScript knowledge.</p>
 
           <h6>Are the videos DRM free?</h6>
           <p>Absolutely.</p>
@@ -824,7 +800,7 @@
           <p>Definitely. <a href="mailto:&#113;&#117;&#101;&#115;&#116;&#105;&#111;&#110;&#115;&#064;&#108;&#101;&#097;&#114;&#110;&#119;&#101;&#098;&#100;&#114;&#105;&#118;&#101;&#114;&#105;&#111;&#046;&#099;&#111;&#109;" onclick="_paq.push(['trackEvent', 'Click', 'CTA', 'Contact']);">Contact me and I'll send you details.</a></p>
 
           <h6>Are you available for online or in-person consulting?</h6>
-          <p>Yep. <a href="mailto:&#113;&#117;&#101;&#115;&#116;&#105;&#111;&#110;&#115;&#064;&#108;&#101;&#097;&#114;&#110;&#119;&#101;&#098;&#100;&#114;&#105;&#118;&#101;&#114;&#105;&#111;&#046;&#099;&#111;&#109;" onclick="_paq.push(['trackEvent', 'Click', 'CTA', 'Contact']);">Contact me for pricing and availability.</a></p>
+          <p>Yep. <a href="https://www.codementor.io/kevinlamping">Reach out to me on CodeMentor.io for more details.</a></p>
 
           <h6>What shell/terminal are you using in the videos??</h6>
           <p>I use a combo of <a href="https://www.iterm2.com/version3.html">iTerm2</a> and <a href="http://ohmyz.sh/">Oh my zsh</a>. I use <a href="https://github.com/agnoster/agnoster-zsh-theme">the agnoster theme</a>. I also have <a href="https://github.com/klamping/dotfiles">a dotfile repo</a>, which is mostly up-to-date.</p>
@@ -888,7 +864,7 @@
     </svg>
 
     <script src="js/jquery.js"></script>
-    <script src="js/unslider-min.js"></script>
+    <!-- <script src="js/unslider-min.js"></script> -->
 
     <script>
       $(function() {
@@ -906,12 +882,12 @@
     </script>
 
     <script>
-      $('.course-reviews').unslider({
-        animation: 'vertical',
-        autoplay: true,
-        infinite: true,
-        arrows: false
-      });
+      // $('.course-reviews').unslider({
+      //   animation: 'vertical',
+      //   autoplay: true,
+      //   infinite: true,
+      //   arrows: false
+      // });
 
       // get window query string
       var queryString = window.location.search;

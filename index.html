@@ -840,6 +840,9 @@
     </div>
     <!-- // Container Ends -->
 
+    <div id="contact">
+      <a href="mailto:&#107;&#101;&#118;&#105;&#110;&#064;&#108;&#101;&#097;&#114;&#110;&#119;&#101;&#098;&#100;&#114;&#105;&#118;&#101;&#114;&#105;&#111;&#046;&#099;&#111;&#109;">Have a question? <strong>Email me</strong>!</a>
+    </div>
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 
@@ -882,31 +885,26 @@
               }, 1500);
               event.preventDefault();
           });
+
+          setTimeout(function () {
+            $('#contact').addClass('fadeIn');
+          }, 4000)
+
+          // get window query string
+          var queryString = window.location.search;
+
+          if (queryString.length > 0) {
+            if (queryString.indexOf("coupon=wdio") > -1) {
+              $('.welcome').css({display:'block'});
+            }
+
+            // add query string to every link
+            $('.course-link').each(function () {
+              var newHref = $( this ).attr('href') + queryString;
+              $( this ).attr('href', newHref);
+            });
+          }
       });
-    </script>
-
-    <script>
-      // $('.course-reviews').unslider({
-      //   animation: 'vertical',
-      //   autoplay: true,
-      //   infinite: true,
-      //   arrows: false
-      // });
-
-      // get window query string
-      var queryString = window.location.search;
-
-      if (queryString.length > 0) {
-        if (queryString.indexOf("coupon=wdio") > -1) {
-          $('.welcome').css({display:'block'});
-        }
-
-        // add query string to every link
-        $('.course-link').each(function () {
-          var newHref = $( this ).attr('href') + queryString;
-          $( this ).attr('href', newHref);
-        });
-      }
 
 
     </script>

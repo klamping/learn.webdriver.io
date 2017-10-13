@@ -1383,3 +1383,21 @@ blockquote {
   font-size: 1.3em;
   margin-bottom: 1.5em;
 }
+
+#contact {
+  opacity: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: #ea5906;
+  padding: 8px 16px;
+  transition: all 1s;
+}
+#contact.fadeIn {
+  opacity: 1;
+}
+#contact a {
+  color: #fff;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px rgba(0, 0, 0, .1);
+}

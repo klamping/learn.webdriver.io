@@ -145,23 +145,58 @@
                     </div>
                 </div>
             </section>
-            <section class="row has-margin-top text-center">
+            <section class="row has-margin-top has-margin-bottom text-center">
               <div class="star-rating">
                 <span style="width:95%"></span>
               </div>
               <h3>Students rate it 4.8 stars (out of 5)!</h3>
+
+              <hr class="has-margin-top has-margin-bottom "/>
+
               <div class="course-reviews">
-                  <ul class="row">
-                    <li class="col-md-4">"One of the best courses on WebdriverIO and getting started with NodeJS testing."</li>
-                    <li class="col-md-4">"Very good course on WebdriverIO. I enjoyed the pace of the videos. All the fluff is cut out unlike 90% of the Selenium courses on Udemy."</li>
-                    <li class="col-md-4">"Great course. Really simple to follow. Can't wait for the next chapters!"</li>
-                  </ul>
+                  <div class="row">
+                    <p class="col-md-6">"One of the best courses on WebdriverIO and getting started with NodeJS testing."</p>
+                    <p class="col-md-6">"Very good course on WebdriverIO. I enjoyed the pace of the videos. All the fluff is cut out unlike 90% of the Selenium courses on Udemy."</p>
+                  </div>
+                  <div class="row">
+                    <p class="col-md-6">"Not gonna lie, this is by far the best web automation course I've taken (...and I've participated in lots of Selenium-esque courses)"</p>
+                    <p class="col-md-6">"Great course. Really simple to follow. Can't wait for the next chapters!"</p>
+                  </div>
               </div>
             </section>
             <!-- // End Testimonials -->
         </div>
 
-        <hr />
+
+        <div class="masthead">
+            <h2 class="has-padding-bottom">What's This Course About?</h2>
+            <div class="intro-video">
+                  <video poster="images/thumb.jpg" src="course-intro-v3.mp4" id="intro-vid" preload="auto"></video>
+                  <script>
+                  (function() {
+                    var video = document.getElementById("intro-vid");
+                    video.addEventListener("click", function () {
+                      if (this.paused || this.ended) {
+                        this.play();
+                        _paq.push(['trackEvent', 'Video', 'Play', 'Intro']);
+                      } else {
+                        this.pause();
+                        _paq.push(['trackEvent', 'Video', 'Pause', 'Intro']);
+                      }
+                    });
+                    video.addEventListener('timeupdate', function () {
+                      var time = video.currentTime.toFixed(0);
+                      if (time % 15 == 0) {
+                        _paq.push(['trackEvent', 'Video', 'Progress', 'Intro', time]);
+                      }
+                    });
+                    video.addEventListener('ended', function () {
+                      _paq.push(['trackEvent', 'Video', 'Complete', 'Intro']);
+                    });
+                  }());
+                  </script>
+            </div>
+        </div>
 
         <div class="container why highlight">
           <div class="section-title">
@@ -226,39 +261,6 @@
         </div>
       </div>
     </div>
-
-
-
-    <div class="masthead">
-        <h2 class="has-padding-bottom">What's This Course About?</h2>
-        <div class="intro-video">
-              <video poster="images/thumb.jpg" src="course-intro-v3.mp4" id="intro-vid" preload="auto"></video>
-              <script>
-              (function() {
-                var video = document.getElementById("intro-vid");
-                video.addEventListener("click", function () {
-                  if (this.paused || this.ended) {
-                    this.play();
-                    _paq.push(['trackEvent', 'Video', 'Play', 'Intro']);
-                  } else {
-                    this.pause();
-                    _paq.push(['trackEvent', 'Video', 'Pause', 'Intro']);
-                  }
-                });
-                video.addEventListener('timeupdate', function () {
-                  var time = video.currentTime.toFixed(0);
-                  if (time % 15 == 0) {
-                    _paq.push(['trackEvent', 'Video', 'Progress', 'Intro', time]);
-                  }
-                });
-                video.addEventListener('ended', function () {
-                  _paq.push(['trackEvent', 'Video', 'Complete', 'Intro']);
-                });
-              }());
-              </script>
-        </div>
-    </div>
-
     <!-- Bite-size video lessons built to accelerate your learning -->
 
 
@@ -508,6 +510,39 @@
                 <p class="video-title">Generic Page Objects</p>
                 <p class="video-number">#28</p>
                 <p class="video-length">6:00</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="module">
+            <h2 class="module-number">Bonus Module</h2>
+            <h3 class="module-title">Cucumber And Gherkin Syntax</h3>
+            <p class="module-description">Integrate Cucumber for "living" documentation.</p>
+            <ol class="module-videos">
+              <li>
+                <img src="images/lesson-bonus-a.png" alt="">
+                <p class="video-title">Cucumber Overview</p>
+                <!-- <p class="video-number">#1</p> -->
+                <!-- <p class="video-length">4:24</p> -->
+                <p class="video-length">Coming Soon</p>
+              </li>
+              <li>
+                <img src="images/lesson-bonus-a.png" alt="">
+                <p class="video-title">Cucumber Boilerplate</p>
+                <!-- <p class="video-number">#2</p> -->
+                <p class="video-length">Coming Soon</p>
+              </li>
+              <li>
+                <img src="images/lesson-bonus-a.png" alt="">
+                <p class="video-title">Writing New Features</p>
+                <!-- <p class="video-number">#3</p> -->
+                <p class="video-length">Coming Soon</p>
+              </li>
+              <li>
+                <img src="images/lesson-bonus-a.png" alt="">
+                <p class="video-title">Writing New Steps</p>
+                <!-- <p class="video-number">#4</p> -->
+                <p class="video-length">Coming Soon</p>
               </li>
             </ol>
           </div>

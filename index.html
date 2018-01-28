@@ -940,10 +940,10 @@
             }
 
             // add query string to every link
-            // $('.course-link').each(function () {
-            //   var newHref = $( this ).attr('href') + queryString;
-            //   $( this ).attr('href', newHref);
-            // });
+            $('.course-link').each(function () {
+              var newHref = $( this ).attr('href') + queryString;
+              $( this ).attr('href', newHref);
+            });
           }
       });
 

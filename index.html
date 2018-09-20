@@ -973,10 +973,11 @@
         }
 
         // add query string to every link
-        document.querySelectorAll('.course-link').forEach(function (el) {
-          var newHref = el.getAttribute('href') + queryString;
-          el.setAttribute('href', newHref);
-        });
+        const links = document.querySelectorAll('.course-link')
+        for (var i = 0; i < links.length; i++) {
+          var newHref = links[i].getAttribute('href') + queryString;
+          links[i].setAttribute('href', newHref);
+        }
       }
     </script>
 

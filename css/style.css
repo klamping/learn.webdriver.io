@@ -605,13 +605,15 @@ hr {
   position: relative;
   width: 100%;
   padding-top: 56.2857143%;
-  border: 1px solid #ccc;
-  border-radius: 2px;
 }
-.module .module-videos img {
+.module .module-videos .module-thumbnail img {
   position: absolute;
   top: 0;
   width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .module .module-videos .video-link {

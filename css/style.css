@@ -1303,7 +1303,8 @@ blockquote {
 }
 
 
-.welcome {
+.welcome,
+.welcome-kevin {
   background: #F75E06;
   text-align: center;
   padding: 15px 5px;
@@ -1312,12 +1313,14 @@ blockquote {
   font-size: 22px;
   z-index: 10;
 }
-.welcome a {
+.welcome a,
+.welcome-kevin a {
   color: #fff;
   text-decoration: none;
   border-bottom: 2px solid #202020;
 }
-.welcome + .masthead {
+.welcome + .masthead,
+.welcome-kevin + .masthead {
   padding-top: 2em;
 }
 

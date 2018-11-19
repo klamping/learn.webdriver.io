@@ -44,8 +44,8 @@
 </head>
 
 <body>
-  <!-- <div class="countdown" id="countdown">
-    Spring 2018 Sale<sup>*</sup>! Save 40% with coupon code <strong>springsale2018</strong>. Expires in
+  <div class="countdown" id="countdown">
+    Black Friday 2018 Sale! Save 51% with coupon code <strong>bf2018</strong>. Expires in
     <span class="days"></span>
     <span>days</span>,
     <span class="hours"></span>
@@ -54,7 +54,7 @@
     <span>minutes</span>,
     <span class="seconds"></span>
     <span>seconds</span>
-  </div> -->
+  </div>
 
   <script>
     function getTimeRemaining(endtime) {
@@ -96,9 +96,9 @@
       var timeinterval = setInterval(updateClock, 1000);
     }
 
-    var deadline = new Date(2018, 4, 12);
+    var deadline = new Date(2018, 10, 30);
 
-    // initializeClock('countdown', deadline);
+    initializeClock('countdown', deadline);
   </script>
 
   <div class="welcome" style="display: none;">
@@ -792,7 +792,7 @@
           <ul class="course-features">
             <li class="discount-feature">
               <div class="price" style="padding: 10px;">
-                <p class="discount-price" style="margin-top: 10px;"><sup class="dollar">$</sup>97</p>
+                <p class="discount-price" style="margin-top: 10px;"><sup class="dollar">$</sup>47</p>
                 <p class="full-price"><sup class="dollar">$</sup><del>127</del></p>
               </div>
             </li>
@@ -803,7 +803,7 @@
             <li>30-day money-back guarantee</li>
           </ul>
           <div class="cta">
-            <a href="https://the-lamp-light.thinkific.com/enroll/18028" target="_blank" class="btn btn-primary btn-lg cta-btn course-link" onclick="_paq.push(['trackEvent', 'Click', 'Buy', 'Starter']);">Enroll Now!</a>
+            <a href="https://the-lamp-light.thinkific.com/enroll/18028?coupon=bf2018" target="_blank" class="btn btn-primary btn-lg cta-btn course-link" onclick="_paq.push(['trackEvent', 'Click', 'Buy', 'Starter']);">Enroll Now!</a>
           </div>
         </div>
         <div class="package pricing-table professional">
@@ -811,7 +811,7 @@
           <ul class="course-features">
             <li class="discount-feature">
               <div class="price" style="padding: 10px;">
-                <p class="discount-price"><sup class="dollar">$</sup>197</p>
+                <p class="discount-price"><sup class="dollar">$</sup>97</p>
                 <p class="full-price"><sup class="dollar">$</sup><del>247</del></p>
               </div>
             </li>
@@ -823,7 +823,7 @@
             <li>30 day money-back guarantee</li>
           </ul>
           <div class="cta">
-            <a href="https://the-lamp-light.thinkific.com/enroll/52371" target="_blank" class="btn btn-primary btn-lg cta-btn course-link" onclick="_paq.push(['trackEvent', 'Click', 'Buy', 'Pro']);">Enroll Now!</a>
+            <a href="https://the-lamp-light.thinkific.com/enroll/52371?coupon=bf2018" target="_blank" class="btn btn-primary btn-lg cta-btn course-link" onclick="_paq.push(['trackEvent', 'Click', 'Buy', 'Pro']);">Enroll Now!</a>
           </div>
         </div>
       </div>
@@ -970,20 +970,20 @@
       // get window query string
       var queryString = window.location.search;
 
-      if (queryString.length > 0) {
-        if (queryString.indexOf('coupon=wdio') > -1) {
-          document.querySelector('.welcome').style.display = 'block'
-        } else if (queryString.indexOf('coupon=kevin') > -1) {
-          document.querySelector('.welcome-kevin').style.display = 'block'
-        }
+      // if (queryString.length > 0) {
+      //   if (queryString.indexOf('coupon=wdio') > -1) {
+      //     document.querySelector('.welcome').style.display = 'block'
+      //   } else if (queryString.indexOf('coupon=kevin') > -1) {
+      //     document.querySelector('.welcome-kevin').style.display = 'block'
+      //   }
 
-        // add query string to every link
-        const links = document.querySelectorAll('.course-link')
-        for (var i = 0; i < links.length; i++) {
-          var newHref = links[i].getAttribute('href') + queryString;
-          links[i].setAttribute('href', newHref);
-        }
-      }
+      //   // add query string to every link
+      //   const links = document.querySelectorAll('.course-link')
+      //   for (var i = 0; i < links.length; i++) {
+      //     var newHref = links[i].getAttribute('href') + queryString;
+      //     links[i].setAttribute('href', newHref);
+      //   }
+      // }
     </script>
 
     <!-- Piwik -->

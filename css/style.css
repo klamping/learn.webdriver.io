@@ -1384,3 +1384,21 @@ blockquote {
   font-size: 1.3rem;
   text-shadow: 1px 1px rgba(0, 0, 0, .1);
 }
+
+
+.update {
+  background: #fff;
+  font-size: 1.3em;
+  margin: 2em auto;
+  padding: 1em 3em;
+  line-height: 1.5;
+  color: #333;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .2);
+}
+.update p {
+  margin-bottom: 1.5em;
+}
+
+.update .section-title {
+  margin: 0;
+}

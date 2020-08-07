@@ -1402,3 +1402,32 @@ blockquote {
 .update .section-title {
   margin: 0;
 }
+
+
+
+.cta-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.cta-form .cta-item {
+  flex: 4 0 auto;
+}
+.cta-form .cta-item input {
+  width: 100%;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-top-color: rgba(0, 0, 0, 0.25);
+  border-right: 0;
+  height: 50px;
+  padding-left: 1em;
+  color: #333;
+}
+.cta-form button.cta-item {
+  flex: 1 0 auto;
+  border-radius: 0 5px 5px 0;
+  font-size: 22px;
+  padding: 10px 28px 9px;
+}

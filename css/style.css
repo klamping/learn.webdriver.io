@@ -36,6 +36,7 @@ I will really help you
 body {
   font-family: 'Montserrat', Arial, sans-serif;
   background: #FFF;
+  font-size: 16px;
   font-weight: 400;
   height: 100%;
   margin: 0;
@@ -851,8 +852,12 @@ blockquote {
     font-style: italic;
 }
 
+.bio {
+  font-size: 1.3em;
+  padding-top: 20px;
+}
+
 .instructor {
-    margin-top: 40px;
     text-align: right;
 }
 .instructor img {
@@ -871,7 +876,6 @@ blockquote {
 
 .instructor p strong {
     color: #384047;
-    font-size: 16px;
 }
 
 

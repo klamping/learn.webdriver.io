@@ -976,6 +976,10 @@ blockquote {
 .faq {
   border-bottom: 1px solid #ddd;
   margin-bottom: 25px;
+  font-size: 1.3em;
+}
+.faq h4 {
+  margin-bottom: 0.25em;
 }
 .faq p {
     margin-bottom: 25px;

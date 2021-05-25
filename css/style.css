@@ -63,6 +63,7 @@ h1 {
     line-height: 1.5;
     margin: 25px 0;
 }
+
 .subtitle {
   font-size: 42px;
   text-align: center;
@@ -71,47 +72,49 @@ h1 {
 }
 
 h2 {
-    font-size: 28px;
-    font-weight: 700;
-    margin: 15px 0;
+  color: #ea5906;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 .75em;
+  text-align: center;
 }
 
 h3 {
-    font-size: 18px;
-    margin: 10px 0;
-    font-weight: 700;
+  font-size: 26px;
+  margin: 0 0 .75em;
+  font-weight: 700;
 }
 
 h4 {
-    font-size: 22px;
-    margin: 10px 0;
-    font-weight: 700;
-    line-height: 1.5;
+  font-size: 22px;
+  margin: 0 0 .75em;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 h5 {
-    font-size: 18px;
-    margin: 15px 0;
+  font-size: 18px;
+  margin: 0 0 .75em;
 }
 
 h6 {
-    font-size: 16px;
-    margin: 10px 0;
+  font-size: 16px;
+  margin: 0 0 .75em;
 }
 
 a {
-    color: #445;
-    text-decoration: underline;
+  color: #445;
+  text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-    color: #5a5a6a;
+  color: #5a5a6a;
 }
 
 
 hr {
-  margin: 10px 5rem;
+  margin: 1.5em 5rem;
   border-color: #ddd;
 }
 
@@ -214,7 +217,7 @@ hr {
 
 .masthead {
     position: relative;
-    padding: 20px 15px 3em;
+    padding: 20px 15px 30px;
     color: #FFF;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
     background: #202020 url("../images/robots_@2X.png") repeat;
@@ -237,17 +240,25 @@ hr {
 
 h1.main-title {
   margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   line-height: 1.1;
   text-align: center;
 }
 
 .masthead h2 {
+  font-size: 28px;
   margin-top: 1rem;
+  margin-bottom: 0.25em;
+  opacity: 0.85;
 }
 .masthead h2 span {
   font-weight: normal;
   font-size: 22px;
+}
+.masthead h3 {
+  font-size: 22px;
+  opacity: 0.65;
+  margin-bottom: 0.75em;
 }
 
 .masthead .intro a {
@@ -499,27 +510,22 @@ h1.main-title {
 /*========== 3. HERO IMAGE ==============*/
 
 .section-title {
-    margin-top: 60px;
-    margin-bottom: 30px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.section-title h2 {
-    color: #384047;
-    margin-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+  max-width: 70em;
+  margin: 60px auto 30px;
 }
 
 .section-title h4 {
-    color: #94a3a8;
-    font-weight: normal;
-    font-size: 18px;
-    margin-top: 0;
+  color: #94a3a8;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 0;
 }
 
 .heroimg img,
 .clientlogo img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .quick-features .icon {
@@ -1397,11 +1403,10 @@ blockquote {
   background: #fff;
   font-size: 1.3em;
   margin: 2em auto;
-  padding: 1em 3em;
   line-height: 1.5;
   color: #333;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .2);
 }
+
 .update p {
   margin-bottom: 1.5em;
 }

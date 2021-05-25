@@ -34,19 +34,19 @@ I will really help you
 /*========== 1. GLOBAL STYLES ==============*/
 
 body {
-    font-family: 'Montserrat', Arial, sans-serif;
-    background: #FFF;
-    font-weight: 400;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    color: #949494;
-    line-height: 1.5;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #FFF;
+  font-weight: 400;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #949494;
+  line-height: 1.5;
 }
 
 strong,
 b {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 h1,
@@ -55,13 +55,14 @@ h3,
 h4,
 h5,
 h6 {
-    color: #323232;
+  color: #323232;
+  line-height: 1.3;
 }
 
 h1 {
-    font-size: 64px;
-    line-height: 1.5;
-    margin: 25px 0;
+  font-size: 64px;
+  line-height: 1.5;
+  margin: 25px 0;
 }
 
 .subtitle {

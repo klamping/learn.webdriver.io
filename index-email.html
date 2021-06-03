@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn Webdriver Test Automation with WebdriverIO">
+    <title>Master Test Automation with Using WebdriverIO</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- All in One CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Google Font : Montserrat (Choose other: http://www.google.com/fonts/ ) -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script type="text/javascript">
+      var _paq = _paq || [];
+    </script>
+
+</head>
+
+<body>
+    <!-- Header Starts -->
+    <main id="top" class="masthead" role="main">
+        <div class="container">
+
+            <a href="https://the-lamp-light.thinkific.com/users/sign_in" class="sign-in">Already a student? Sign In</a>
+
+            <h1 class="main-title">Master Web App Test Automation Using WebdriverIO</h1>
+
+            <div class="row">
+              <!-- <div class="col-md-6">
+                <div class="intro-video">
+                  <p><img src="new/teaser.png" alt="" style="width: 100%;"></p> -->
+                      <!-- <video poster="images/thumb.jpg" src="course-intro-v3.mp4" id="intro-vid"></video>
+                      <script>
+                      (function() {
+                        var video = document.getElementById("intro-vid");
+                        video.addEventListener("click", function () {
+                          if (this.paused || this.ended) {
+                            this.play();
+                            _paq.push(['trackEvent', 'Video', 'Play', 'Intro']);
+                          } else {
+                            this.pause();
+                            _paq.push(['trackEvent', 'Video', 'Pause', 'Intro']);
+                          }
+                        });
+                        video.addEventListener('timeupdate', function () {
+                          var time = video.currentTime.toFixed(0);
+                          if (time % 15 == 0) {
+                            _paq.push(['trackEvent', 'Video', 'Progress', 'Intro', time]);
+                          }
+                        });
+                        video.addEventListener('ended', function () {
+                          _paq.push(['trackEvent', 'Video', 'Complete', 'Intro']);
+                        });
+                      }());
+                      </script> -->
+                <!-- </div>
+              </div> -->
+              <!-- <div class="col-md-6 intro"> -->
+              <div class="col-md-12 intro">
+                <p>Hey, I'm Kevin, creator of the highly-rated <i>Learn WebdriverIO</i> course. You're probably wondering where it is... Well, I'm working on a reboot of the course material to get it up-to-date.</p>
+                <p>Want to be "in the know" about the revamp? Sign up to get news, discounts and free goodies as I finish building it out.</p>
+
+
+                <!-- AWeber Web Form Generator 3.0.1 -->
+
+                <form method="post" accept-charset="UTF-8" action="https://www.aweber.com/scripts/addlead.pl" >
+                  <div style="display: none;">
+                    <input type="hidden" name="meta_web_form_id" value="563271078" />
+                    <input type="hidden" name="meta_split_id" value="" />
+                    <input type="hidden" name="listname" value="awlist5710764" />
+                    <input type="hidden" name="redirect" value="https://www.aweber.com/thankyou-coi.htm?m=text" id="redirect_3314a99079ff3faff02c71ff9a6a31af" />
+
+                    <input type="hidden" name="meta_adtracking" value="Learn_WebdriverIO_Interest_Signup" />
+                    <input type="hidden" name="meta_message" value="1" />
+                    <input type="hidden" name="meta_required" value="email" />
+
+                    <input type="hidden" name="meta_tooltip" value="" />
+                  </div>
+                  <div class="cta-form">
+                    <div class="formkit-field cta-item">
+                      <input class="text" type="text" name="email" value="" placeholder="Your email address" />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg cta-item">Stay Updated!</button>
+                    <div class="af-element tag" style="display:none;"><input id="awf_tag-109274118" type="hidden" name="tag_109274118" value="lwdio: new course interest" /></div>
+                  </div>
+                  <div style="display: none;"><img src="https://forms.aweber.com/form/displays.htm?id=rGzMTOyMDOwc" alt="" /></div>
+                </form>
+
+                <!-- /AWeber Web Form Generator 3.0.1 -->
+              </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="container update">
+        <div class="section-title">
+        </div>
+        <div class="row">
+          <div class="col-md-4"><a href="https://leanpub.com/webapp-testing-guidebook"><img src="./new/ebook.png" alt="Photo of cover of The Web App Testing Guidebook" class="img-responsive center-block has-margin-bottom" style="max-width: 300px;"/></a></div>
+          <div class="col-md-8">
+            <h2>Don't want to wait?</h2>
+            <p>Have an urgent need to learn WebdriverIO? Good news, I have a full book on it ready to go!</p>
+            <p><a href="https://leanpub.com/webapp-testing-guidebook">The Web App Testing Guidebook</a> covers everything you need to know to get off the ground with UI testing. Examples are built using real-world scenarios, showing how you would actually write your tests. It's a step-by-step guide on how to effectively write UI test automation for the real world.</p>
+            <p>In this book, I cover not only what WebdriverIO can do, but also how you'll be using it day-to-day.</p>
+            <p>I've built the examples around real-world scenarios that demonstrate how you would actually set things up. It's not just "what", but also "how to get there".</p>
+            <p><a href="https://leanpub.com/webapp-testing-guidebook">Grab a Copy!</a></p>
+          </div>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <div class="container">
+            <!-- Testimonials -->
+
+            <h2 class="subtitle has-margin-top">Here's what folks had to say about my previous WebdriverIO course:</h2>
+
+            <section class="row has-margin-bottom">
+                <div class="col-md-5 col-md-offset-1">
+                    <blockquote class="has-padding-top">&ldquo;I really enjoyed going through all videos, <strong>they are awesome</strong> and explain the concepts of WebdriverIO really well.&rdquo;</blockquote>
+                    <div class="clientblock">
+                        <img src="images/cbro.png" alt="">
+                        <p><strong>Christian Bromann</strong>
+                            <br> WebdriverIO Maintainer</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <blockquote class="has-padding-top">&ldquo;<strong>Bang on the money</strong> in terms of content as no one else seems to be doing a course like this on the net; trust me I've looked.&rdquo;</blockquote>
+                    <div class="clientblock">
+                        <img src="images/grant.jpg" alt="">
+                        <p><strong>Grant Horner</strong>
+                            <br> QA Test Analyst</p>
+                    </div>
+                </div>
+            </section>
+            <section class="row has-margin-top has-margin-bottom">
+                <div class="col-sm-6 col-lg-3">
+                  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Highly recommend! Truly high quality online course on getting up-to-speed in WebdriverIO test automation for a reasonable price! Thanks, <a href="https://twitter.com/klamping?ref_src=twsrc%5Etfw">@klamping</a>! <a href="https://t.co/mn24Rqzm1F">https://t.co/mn24Rqzm1F</a></p>&mdash; andreichig (@andreichig) <a href="https://twitter.com/andreichig/status/936721740998340608?ref_src=twsrc%5Etfw">December 1, 2017</a></blockquote>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <blockquote class="twitter-tweet" data-lang="en" data-conversation="none"><p lang="en" dir="ltr">Amazing job <a href="https://twitter.com/klamping">@klamping</a> for creating such an awesome online learning course for <a href="https://twitter.com/webdriverio?ref_src=twsrc%5Etfw">@webdriverio</a>! Check it out: <a href="https://t.co/A9gnWjhanH">https://t.co/A9gnWjhanH</a> 🍻<a href="https://twitter.com/hashtag/cheers?src=hash&amp;ref_src=twsrc%5Etfw">#cheers</a> <a href="https://t.co/vsniFNbD5q">https://t.co/vsniFNbD5q</a></p>&mdash; WebdriverIO (@webdriverio) <a href="https://twitter.com/webdriverio/status/888146346494054404?ref_src=twsrc%5Etfw">July 20, 2017</a></blockquote>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Highly recommend <a href="https://twitter.com/webdriverio?ref_src=twsrc%5Etfw">@webdriverio</a> and <a href="https://twitter.com/cucumberbdd?ref_src=twsrc%5Etfw">@cucumberbdd</a>! Join along! 👉  <a href="https://t.co/YIO7kEBoRi">https://t.co/YIO7kEBoRi</a></p>&mdash; Jeremy Lewis (@LewisJPaul) <a href="https://twitter.com/LewisJPaul/status/955938697328947201?ref_src=twsrc%5Etfw">January 23, 2018</a></blockquote>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;m learning <a href="https://twitter.com/webdriverio?ref_src=twsrc%5Etfw">@webdriverio</a> and <a href="https://twitter.com/cucumberbdd?ref_src=twsrc%5Etfw">@cucumberbdd</a>! Join along! 👉  <a href="https://t.co/Caxuw95HRo">https://t.co/Caxuw95HRo</a><br>This is a must-watch videos to help you with UI testing with WebDriverIO</p>&mdash; Xu Cao (@xucao) <a href="https://twitter.com/xucao/status/956004519686504448?ref_src=twsrc%5Etfw">January 24, 2018</a></blockquote>
+                </div>
+
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
+            <section class="row has-margin-top has-margin-bottom text-center">
+              <hr class="has-margin-top has-margin-bottom "/>
+
+              <div class="star-rating">
+                <span style="width:95%"></span>
+              </div>
+
+              <h3>4.8 star rating from Students!</h3>
+
+
+              <div class="course-reviews">
+                  <div class="row">
+                    <p class="col-md-6">"One of the best courses on WebdriverIO and getting started with NodeJS testing." - </p>
+                    <p class="col-md-6">"Very good course on WebdriverIO. I enjoyed the pace of the videos. All the fluff is cut out unlike 90% of the Selenium courses on Udemy."</p>
+                  </div>
+                  <div class="row">
+                    <p class="col-md-6">"Not gonna lie, this is by far the best web automation course I've taken (...and I've participated in lots of Selenium-esque courses)"</p>
+                    <p class="col-md-6">"Great course. Really simple to follow. Can't wait for the next chapters!"</p>
+                  </div>
+              </div>
+            </section>
+            <!-- // End Testimonials -->
+        </div>
+
+
+
+    <!-- Grey Highlight Section -->
+    <div class="highlight has-margin-top has-margin-bottom has-padding-bottom">
+        <div class="container">
+            <section class="row">
+                <div class="col-md-5">
+                    <div class="instructor">
+                        <img src="images/profile.jpg" alt="Kevin Lamping">
+                    </div>
+                </div>
+                <div class="col-md-6 has-padding-top">
+                    <h4>Meet Your Teacher: Kevin Lamping</h4>
+                    <h5>WebdriverIO Core Member &amp; Senior Front-end Engineer</h5>
+                    <p>Kevin is a Front-end Engineer and Tester with over 12 years of industry experience. He has a popular <a href="https://www.youtube.com/user/medigerati/">YouTube Tutorial Channel</a> covering Front-end Testing, and is an Author, Presenter and Mentor.</p>
+
+                    <p>In his free-time, when he's not <s>chasing after</s> playing with his kids, Kevin can be found out in his garden, playing tabletop board games, or throwing discs at his local disc golf course.</p>
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+    <!-- // End Grey Highlight Section -->
+
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- FAQ -->
+        <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <section class="faq">
+          <h6>When will the course be ready?</h6>
+          <p>Unfortunately, I can't give you a solid date on this. It's going to take a fair amount of work to complete, and with other priorities in my life (my kids), I can't promise anything specific. I do hope to have the first 10 videos released by Sept. 30th.</p>
+
+          <h6>How much will it cost?</h6>
+          <p>I again don't have an answer for you. I don't want to say one price and change it if the planned content is somehow different.</p>
+
+          <h6>What prerequisites are there to this course?</h6>
+          <p>You should have a good understanding of JavaScript and we'll be doing a little bit of work on the command line. While I don't cover the basics of JavaScript, I will provide links and a little bit of guidance on where you can freshen up your skills. Speaking of...</p>
+
+          <p>If you're new to JavaScript, <a href="https://www.youtube.com/watch?v=le-URjBhevE&list=PLWKjhJtqVAbk2qRZtWSzCIN38JC_NdhW5">check out this free course to get started</a>.</p>
+
+          <p>If you haven't worked with the command line before, <a href="https://commandlinepoweruser.com/">here's another free course on the subject</a>.</p>
+
+          <h6>I'm a front-end dev. Will this course be for me?</h6>
+          <p>Absolutely. WebdriverIO is a perfect fit for anyone with a little bit of JavaScript knowledge looking to improve their skills through automated testing.</p>
+
+          <h6>Are you available for online or in-person consulting?</h6>
+          <p>Yep! <a href="https://www.codementor.io/kevinlamping">Reach out to me on CodeMentor.io for more details.</a></p>
+
+          <h6>Will the videos be DRM free?</h6>
+          <p>Absolutely. I trust you! There was that one jerk who stole my previous course content and uploaded it to a sketchy site, but the vast majority of y'all are good people and I won't punish you because there are jerks out there.</p>
+
+          <h6>How will I access the course?</h6>
+          <p>The course is hosted through <a href="http://try.thinkific.com/kevinlamping8038">thinkific.com</a>, which is where you'll be able to access all the content indefinitely.</p>
+
+          <h6>Will there be a student discount available?</h6>
+          <p>Definitely!</p>
+
+          <h6>What shell/terminal are you using in the videos??</h6>
+          <p>Check out my personal "<a href="https://blog.kevinlamping.com/uses">Uses</a>" page for the info.</p>
+
+          <h6>What if I don't like the content?</h6>
+          <p>If you feel like the content isn't what you were expecting, I will have a "No Questions Asked" full refund policy for up to 30 days after purchase.</p>
+        </section>
+
+        <p class="has-padding-bottom">Have a question I didn't answer? <a href="mailto:&#113;&#117;&#101;&#115;&#116;&#105;&#111;&#110;&#115;&#064;&#108;&#101;&#097;&#114;&#110;&#119;&#101;&#098;&#100;&#114;&#105;&#118;&#101;&#114;&#105;&#111;&#046;&#099;&#111;&#109;" onclick="_paq.push(['trackEvent', 'Click', 'CTA', 'Contact']);">Reach out and let me know</a>!</p>
+        <!-- // End FAQ -->
+
+    </div>
+    <!-- // Container Ends -->
+
+
+    <!-- //  Footer CTA Ends -->
+
+    <!-- Container -->
+    <div class="footercta">
+        <section class="container">
+            <div class="col-md-12" style="text-align: left;">
+              <p>Check out <a href="https://newsletter.frontendtesting.com/" style="color: #ea5906">my free Front-end Testing Newsletter</a>!</p>
+              <p>&copy; 2020 Kevin Lamping. All Rights Reserved</p>
+            </div>
+        </section>
+        <!-- // End Client Logos -->
+
+    </div>
+    <!-- // Container Ends -->
+
+    <div id="contact">
+      <a href="mailto:&#107;&#101;&#118;&#105;&#110;&#064;&#108;&#101;&#097;&#114;&#110;&#119;&#101;&#098;&#100;&#114;&#105;&#118;&#101;&#114;&#105;&#111;&#046;&#099;&#111;&#109;">Have a question? <strong>Email me</strong>!</a>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+      <symbol id="icon-bug" viewBox="0 0 32 32">
+        <title>Bug Icon</title>
+        <path class="path1" d="M32 18v-2h-6.040c-0.183-2.271-0.993-4.345-2.24-6.008h5.061l2.189-8.758-1.94-0.485-1.811 7.242h-5.459c-0.028-0.022-0.056-0.043-0.084-0.064 0.21-0.609 0.324-1.263 0.324-1.944 0-3.305-2.686-5.984-6-5.984s-6 2.679-6 5.984c0 0.68 0.114 1.334 0.324 1.944-0.028 0.021-0.056 0.043-0.084 0.064h-5.459l-1.811-7.242-1.94 0.485 2.189 8.758h5.061c-1.246 1.663-2.056 3.736-2.24 6.008h-6.040v2h6.043c0.119 1.427 0.485 2.775 1.051 3.992h-3.875l-2.189 8.757 1.94 0.485 1.811-7.243h3.511c1.834 2.439 4.606 3.992 7.708 3.992s5.874-1.554 7.708-3.992h3.511l1.811 7.243 1.94-0.485-2.189-8.757h-3.875c0.567-1.217 0.932-2.565 1.051-3.992h6.043z"></path>
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 32 32">
+        <title>clock</title>
+        <path class="path1" d="M15 10c0-0.552 0.448-1 1-1s1 0.448 1 1c0 0.552-0.448 1-1 1s-1-0.448-1-1zM15 22c0-0.552 0.448-1 1-1s1 0.448 1 1c0 0.552-0.448 1-1 1s-1-0.448-1-1zM9 16c0-0.552 0.448-1 1-1s1 0.448 1 1c0 0.552-0.448 1-1 1s-1-0.448-1-1zM21 16c0-0.552 0.448-1 1-1s1 0.448 1 1c0 0.552-0.448 1-1 1s-1-0.448-1-1zM10.757 20.242c0-0.552 0.448-1 1-1s1 0.448 1 1c0 0.552-0.448 1-1 1s-1-0.448-1-1zM10.757 11.757c0-0.552 0.448-1 1-1s1 0.448 1 1c0 0.552-0.448 1-1 1s-1-0.448-1-1zM19.242 20.242c0-0.552 0.448-1 1-1s1 0.448 1 1c0 0.552-0.448 1-1 1s-1-0.448-1-1zM26 14c-0.070 0-0.129 0.033-0.197 0.040-0.348-1.745-1.17-3.306-2.297-4.594l-1.436-7.812c-0.175-0.947-1.002-1.634-1.966-1.634h-8c-0.964 0-1.79 0.688-1.967 1.635l-1.4 7.549c-1.68 1.787-2.737 4.168-2.737 6.816 0 2.583 1.014 4.905 2.621 6.678l1.412 7.688c0.176 0.946 1.003 1.634 1.967 1.634h8c0.963 0 1.789-0.688 1.967-1.635l1.424-7.682c1.189-1.311 2.053-2.92 2.412-4.725 0.068 0.009 0.127 0.042 0.197 0.042 1.104 0 2-0.896 2-2 0-1.105-0.896-2-2-2zM12.104 2h8l1 5.387c-1.477-0.859-3.168-1.387-5-1.387-1.831 0-3.523 0.528-5 1.387l1-5.387zM20 30h-8l-1-5.387c1.476 0.858 3.168 1.387 5 1.387 1.831 0 3.524-0.529 5-1.387l-1 5.387zM16 24c-4.411 0-8-3.59-8-8s3.589-8 8-8c4.411 0 8 3.589 8 8 0 4.41-3.59 8-8 8zM20.941 11.026c0.121 0.121 0.133 0.316 0.028 0.449l-2.426 3.021-1.848 2.225c-0.189 0.182-0.449 0.275-0.699 0.277-0.269-0.002-0.52-0.106-0.707-0.292s-0.289-0.435-0.289-0.698c0-0.272 0.105-0.526 0.296-0.718l5.192-4.285c0.137-0.11 0.332-0.1 0.453 0.021z"></path>
+      </symbol>
+      <symbol id="icon-shield" viewBox="0 0 32 32">
+        <title>shield</title>
+        <path class="path1" d="M30 0l-14 4-14-4c0 0-0.141 1.616 0 4l14 4.378 14-4.378c0.141-2.384 0-4 0-4zM2.256 6.097c0.75 7.834 3.547 21.007 13.744 25.903 10.197-4.896 12.995-18.069 13.744-25.903l-13.744 5.167-13.744-5.167z"></path>
+      </symbol>
+
+      <symbol id="icon-play-circle" viewBox="0 0 28 28">
+        <title>Play</title>
+        <path class="path1" d="M12 2q3.266 0 6.023 1.609t4.367 4.367 1.609 6.023-1.609 6.023-4.367 4.367-6.023 1.609-6.023-1.609-4.367-4.367-1.609-6.023 1.609-6.023 4.367-4.367 6.023-1.609zM18 14.859q0.5-0.281 0.5-0.859t-0.5-0.859l-8.5-5q-0.484-0.297-1-0.016-0.5 0.297-0.5 0.875v10q0 0.578 0.5 0.875 0.25 0.125 0.5 0.125 0.266 0 0.5-0.141z"></path>
+      </symbol>
+
+      <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+        <title></title>
+        <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
+      </symbol>
+    </svg>
+
+    <script>
+      setTimeout(function () {
+        document.getElementById('contact').classList.add('fadeIn');
+      }, 4000)
+    </script>
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+      _paq.push(["setDomains", ["*.learnwebdriverio.com","*.learn.webdriver.io"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      _paq.push(['enableHeartBeatTimer']);
+      (function() {
+        var u="//stats.klamp.in/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '3']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//stats.klamp.in/piwik.php?idsite=3" style="border:0;" alt="" /></p></noscript>
+
+    <!-- End Piwik Code -->
+
+
+</body>
+
+</html>

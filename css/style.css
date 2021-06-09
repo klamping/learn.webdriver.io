@@ -606,6 +606,7 @@ h1.main-title {
   margin: 0;
   margin-right: 10px;
   text-align: left;
+  width: 8em;
 }
 
 .module .module-title {

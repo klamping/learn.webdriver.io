@@ -573,7 +573,7 @@
       // get window query string
       var queryString = window.location.search;
 
-      if (queryString.length > 0) {
+      if (queryString.length > 0 && queryString.includes('coupon')) {
         // if (queryString.indexOf('coupon=wdio') > -1) {
         //   document.querySelector('.welcome').style.display = 'block'
         // } else if (queryString.indexOf('coupon=kevin') > -1) {
@@ -583,8 +583,10 @@
         // add query string to every link
         const links = document.querySelectorAll('.course-link')
         for (var i = 0; i < links.length; i++) {
-          var newHref = links[i].getAttribute('href') + queryString;
-          links[i].setAttribute('href', newHref);
+          let href = new URL(links[i].getAttribute('href'));
+          href.search = queryString;
+
+          links[i].setAttribute('href', href.toString());
         }
       }
     }

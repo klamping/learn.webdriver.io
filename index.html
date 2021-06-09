@@ -580,11 +580,14 @@
         //   document.querySelector('.welcome-kevin').style.display = 'block'
         // }
 
+        // get the coupon from the url
+        const currentUrl = new URL(window.location);
+
         // add query string to every link
         const links = document.querySelectorAll('.course-link')
         for (var i = 0; i < links.length; i++) {
           let href = new URL(links[i].getAttribute('href'));
-          href.search = queryString;
+          href.searchParams.set('coupon', currentUrl.searchParams.get('coupon'));
 
           links[i].setAttribute('href', href.toString());
         }

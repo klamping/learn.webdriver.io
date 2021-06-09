@@ -553,30 +553,38 @@ h1.main-title {
 
 /*========== 4. FEATURES ==============*/
 
+.modules {
+  width: 100%;
+}
+
 .lessons-title {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  font-size: 82px;
 }
 
 .features {
-    margin: 0 0 25px;
-    border: 1px solid #eee;
+    margin: 0 auto 6em;
+    border: 1px solid #ddd;
     overflow: hidden;
     border-radius: 5px;
     padding: 0;
+    max-width: 80em;
 }
 
 .module {
-  border-bottom: 1px solid #eee;
-  padding: 1.5em 25px;
+  border-bottom: 1px solid #ddd;
+  padding: 2.5em;
+  padding-right:  0;
 }
 
 .pro-modules {
-  border: 5px solid #ea5906;
+  /*border: 5px solid #ea5906;*/
+  border: 2px solid #494949;
   background: #f9f9f9;
   position: relative;
 }
 .pro-modules .section-title {
-  background: #ea5906;
+  background: #666;
   color: #fff;
   margin: 0;
   padding: 10px;
@@ -587,7 +595,7 @@ h1.main-title {
   border-bottom-color: #ddd;
 }
 
-.pro-modules .module:last-child {
+.module:last-child {
   border-bottom: 0;
   margin-bottom: 0;
 }
@@ -866,9 +874,13 @@ blockquote {
     font-style: italic;
 }
 
+.profile {
+  padding: 6em 0;
+}
 .bio {
   font-size: 1.3em;
   padding-top: 12px;
+  padding-right:  3em;
 }
 
 .instructor {
@@ -1081,6 +1093,16 @@ blockquote {
   .instructor {
     text-align: center;
   }
+
+  .modules .lessons-title {
+    font-size:  52px;
+  }
+
+  .module {
+    padding: 1.5em;
+    padding-right:  0;
+  }
+
   .module .module-description,
   .module .module-number,
   .module .module-title {
@@ -1140,6 +1162,10 @@ blockquote {
   .features {
     padding: 0 15px;
   }
+  .module {
+    padding: 1em;
+    padding-right:  0;
+  }
   .module .module-number {
     font-size: 16px;
   }
@@ -1158,6 +1184,9 @@ blockquote {
 }
 
 @media (max-width: 500px) {
+  .module {
+    padding: 0;
+  }
   .module .module-videos li {
     width: 100%;
     margin: 0;

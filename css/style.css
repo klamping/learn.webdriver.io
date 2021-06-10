@@ -1000,11 +1000,8 @@ blockquote {
 
 /*========== 7. FAQ ==============*/
 
-
 .faq {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 25px;
-  font-size: 1.3em;
+  width:  100%;
 }
 .faq h4 {
   margin-bottom: 0.25em;
@@ -1097,7 +1094,7 @@ blockquote {
   }
 
   .modules .lessons-title {
-    font-size:  52px;
+    font-size:  48px;
   }
 
   .module {
@@ -1434,16 +1431,13 @@ blockquote {
   color: #555;
   width: 100%;
 }
-.why-content {
+.text-content {
   max-width: 70em;
   margin: 0 auto;
 }
-.why p {
-  font-size: 1.4em;
-  margin-bottom: 1.5em;
-}
-.why ul {
-  font-size: 1.3em;
+.text-content p,
+.text-content ul {
+  font-size:  1.4em;
   margin-bottom: 1.5em;
 }
 

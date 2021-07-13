@@ -577,6 +577,17 @@ h1.main-title {
   padding-right:  0;
 }
 
+.starter-course {
+  border: 2px solid #ea5906;
+  margin-bottom: 10px;
+}
+.starter-course .section-title {
+  background: #ea5906;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+}
+
 .pro-modules {
   /*border: 5px solid #ea5906;*/
   border: 2px solid #494949;

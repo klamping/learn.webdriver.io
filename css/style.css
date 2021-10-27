@@ -440,6 +440,10 @@ h1.main-title {
   clear: both;
   display: block;
 }
+.cta-btn.coming-soon {
+  cursor: default;
+}
+
 
 .subscribe {
     padding: 45px 0;
@@ -564,11 +568,18 @@ h1.main-title {
 
 .features {
     margin: 0 auto 6em;
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
     overflow: hidden;
     border-radius: 5px;
     padding: 0;
     max-width: 80em;
+}
+
+.features .section-title {
+  background: #ea5906;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
 }
 
 .module {
@@ -577,15 +588,18 @@ h1.main-title {
   padding-right:  0;
 }
 
-.starter-course {
+.starter-modules {
   border: 2px solid #ea5906;
+  margin: 40px 0 10px;
+}
+
+
+.advanced-modules {
+  border: 2px solid #333;
   margin-bottom: 10px;
 }
-.starter-course .section-title {
-  background: #ea5906;
-  color: #fff;
-  margin: 0;
-  padding: 10px;
+.advanced-modules .section-title {
+  background: #333;
 }
 
 .pro-modules {
@@ -1281,12 +1295,14 @@ blockquote {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  max-width:  95%;
+  margin: 0 auto;
 }
 .pricing-table {
   border: 1px solid rgba(33,33,33,.3);
   border-radius: 5px;
   overflow: hidden;
-  width: 90%;
+  width: 95%;
   margin-top: 1em;
 }
 .professional.pricing-table {
@@ -1294,26 +1310,42 @@ blockquote {
   -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
   border: 0;
+  z-index: 10;
+  position: relative;
+}
+.mentorship.pricing-table {
+  margin: 0 auto;
+  width: 80%;
 }
 
 @media (min-width: 60em) {
-  .pricing-table {
-    max-width: 45%;
-  }
   .starter.pricing-table {
+    order: 3;
+  }
+  .essentials.pricing-table {
+    order: 1;
+  }
+  .professional.pricing-table {
+    order: 2;
+  }
+  .pricing-table {
+    width: 33%;
+    flex: 1 1 auto;
+  }
+
+  .starter.pricing-table {
+    border-radius: 0 5px 5px 0;
+  }
+  .essentials.pricing-table {
     border-radius: 5px 0 0 5px;
   }
   .professional.pricing-table {
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
   }
 }
 
 .pricing-table .pricing-title {
   margin: 0;
-  background: #333;
-  color: #fff;
   padding: .5em;
   border-bottom: 1px solid #aaa;
   text-align: center;
@@ -1321,6 +1353,25 @@ blockquote {
 .starter.pricing-table .pricing-title {
   background: #ccc;
   color: #333;
+}
+.essentials.pricing-table .pricing-title {
+  background: #333;
+  color: #fff;
+}
+.professional.pricing-table .pricing-title {
+  background: #ea5906;
+  color: #fff;
+}
+.mentorship.pricing-table .pricing-title {
+  background: #666;
+  color: #fff;
+  text-align: left;
+  font-size: 2.2em;
+  padding-left: 1.1em;
+}
+.mentorship.pricing-table p {
+  margin: 1em 2em;
+  font-size: 1.3em;
 }
 .pricing-table .course-features {
   margin: 0;
@@ -1358,12 +1409,13 @@ blockquote {
   color: #bbb;
 }
 
-.pricing-table .cta a {
+.pricing-table .cta .btn {
   margin: .7em;
   display: block;
   width: auto;
+  font-size:  1.4em;
 }
-.starter.pricing-table .cta a {
+.starter.pricing-table .cta .btn {
   background: #FEE5D7;
   color: #ea5906;
   border-color: #ea5906;
@@ -1371,6 +1423,15 @@ blockquote {
 .starter.pricing-table .cta a:hover,
 .starter.pricing-table .cta a:focus {
   background: #F75E06;
+}
+
+.mentorship.pricing-table .cta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.mentorship.pricing-table .cta a {
+  font-size: 1.5em;
 }
 .fallback {
   text-align: center;

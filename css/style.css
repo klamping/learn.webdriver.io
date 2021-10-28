@@ -440,9 +440,6 @@ h1.main-title {
   clear: both;
   display: block;
 }
-.cta-btn.coming-soon {
-  cursor: default;
-}
 
 
 .subscribe {
@@ -630,9 +627,13 @@ h1.main-title {
   display: inline-block;
   margin: 0;
   margin-right: 10px;
+}
+
+.pro-modules .module .module-number {
   text-align: left;
   width: 8em;
 }
+
 
 .module .module-title {
   font-size: 32px;
@@ -1423,6 +1424,14 @@ blockquote {
 .starter.pricing-table .cta a:hover,
 .starter.pricing-table .cta a:focus {
   background: #F75E06;
+}
+.pricing-table .cta-btn.coming-soon,
+.pricing-table .cta-btn.coming-soon:hover,
+.pricing-table .cta-btn.coming-soon:focus {
+  cursor: default;
+  background: rgba(234, 89, 6, .6) !important;
+  border-color: rgba(234, 89, 6, .75);
+  text-shadow: none;
 }
 
 .mentorship.pricing-table .cta {

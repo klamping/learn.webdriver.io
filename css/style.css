@@ -1430,8 +1430,8 @@ blockquote {
 .pricing-table .cta-btn.coming-soon:hover,
 .pricing-table .cta-btn.coming-soon:focus {
   cursor: default;
-  background: rgba(234, 89, 6, .6) !important;
-  border-color: rgba(234, 89, 6, .75);
+  background: #bbb !important;
+  border-color: #999;
   text-shadow: none;
 }
 
